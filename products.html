@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Gulp pack for easy html/php markup development">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<link rel="stylesheet"
+				href="css/swiper-bundle.min.css">
+	<title>Easy-webdev-startpack v3.0</title>
+</head>
+
+
+<body>
+<div class="wrapper">
+	<header class="header">
+	<div class="offcanvas-menu-overlay"></div>
+	<div class="top-header">
+		<div class="offcanvas-top-header"></div>
+		<div class="container flex">
+			<div class="top-header__city">
+				<div class="top-header__main-city class-click">
+					<img src="img/icons/header/location.svg" alt="location">
+					<span class="header-city --text-mini">Сарапул</span>
+				</div>
+				<div class="top-header__list-cities class-add">
+	<h3 class="top-header__list-title">Ваш город</h3>
+	<div class="close-btn class-close"></div>
+	<div class="top-header__cities-search">
+		<input type="text" id="searchInput" placeholder="Не нашли город? Воспользуйтесь поиском">
+	</div>
+	<ul class="top-header__city-cities flex-wrap" id="cityList">
+		<li><a href="#">Самара</a></li>
+		<li><a href="#">Ижевск</a></li>
+		<li><a href="#">Екатеринбург</a></li>
+		<li><a href="#">Нижний Новгород</a></li>
+		<li><a href="#">Набережные челны</a></li>
+		<li><a href="#">Самара</a></li>
+		<li><a href="#">Самара</a></li>
+		<li><a href="#">Самара</a></li>
+		<li><a href="#">Ижевск</a></li>
+		<li><a href="#">Екатеринбург</a></li>
+		<li><a href="#">Нижний Новгород</a></li>
+		<li><a href="#">Набережные челны</a></li>
+		<li><a href="#">Самара</a></li>
+		<li><a href="#">Самара</a></li>
+	</ul>
+</div>
+
+			</div>
+			<!-- <nav class="top-header__menu">
+				<ul class="top-header__list flex --text-middle">
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Сертификаты</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav> -->
+			<div class="top-header__social flex-wrap">
+				<div class="top-header__social-img"><a href="#"><img src="img/icons/header/vk.svg" alt="location"></a></div>
+				<div class="top-header__social-img"><a href="#"><img src="img/icons/header/telega.svg" alt="location"></a></div>
+				<div class="top-header__cabinet --text-middle"><a href="#">Личный кабинет</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="middle-header flex">
+			<div class="middle-header__left flex">
+				<a href="/" class="middle-header__logo"><img src="img/logo/logo.svg" alt="logo"></a>
+				<span class="middle-header__border"></span>
+				<a href="/" class="middle-header__rehau"><img src="img/logo/logo-rexay.svg" alt="rexay"></a>
+			</div>
+			<div class="middle-header__right flex">
+				<a href="tel:8(800)1003197" class="middle-header__phone">8 (800) 100 31 97</a>
+				<div class="header-burger"><span></span></div>
+				<div class="middle-header__back-call --btn">Заказать звонок</div>
+			</div>
+		</div>
+		<nav class="header-menu">
+			<ul class="header-menu__list flex-wrap --text-mini">
+				<li><a href="#">Продукция</a>
+					<ul class="sub-menu">
+						<li><a href="#">Остекление</a>
+							<ul class="sub-menu">
+								<li><a href="#">Остекление домов</a></li>
+								<li><a href="#">Остекление балконов и лоджий</a></li>
+								<li><a href="#">Отделка балконов и лоджий</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Двери</a></li>
+						<li><a href="#">Портальные системы</a></li>
+						<li><a href="#">Окна</a></li>
+						<li><a href="#">Конструкции из алюминия</a></li>
+						<li><a href="#">Нестандартные решения</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Материалы</a>
+					<ul class="sub-menu">
+						<li><a href="#">Профили ПВХ</a>
+							<ul class="sub-menu">
+								<li><a href="#">Rehau</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Алюминий</a>
+							<ul class="sub-menu">
+								<li><a href="#">Krauss</a></li>
+								<li><a href="#">Provedal</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Аксессуары</a>
+							<ul class="sub-menu">
+								<li><a href="#">Подставочный профиль</a></li>
+								<li><a href="#">Ручки</a></li>
+								<li><a href="#">Подоконники</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Стекла</a></li>
+						<li><a href="#">Сертификаты</a>
+							<ul class="sub-menu">
+								<li><a href="#">Прототипы испытаний</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Фурнитура</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Дилерам</a></li>
+				<li><a href="#">Адреса</a></li>
+				<li><a href="#">О заводе</a></li>
+			</ul>
+			<a href="tel:8(800)1003197" class="middle-header__phone">8 (800) 100 31 97</a>
+		</nav>
+	</div>
+</header>
+
+	<div class="content">
+		<section class="products-page --margin-block">
+			<div class="container">
+				<h1 class="products-page__title --title">Продукция</h1>
+				<div class="products-page-content">
+					<div class="products-page-content__titles">
+						<div class="products-page-content__main-tab-link tab" data-tab="tab1">
+							<div class="products-page-content__title">
+								ОКНА ПВХ
+							</div>
+							<div class="products-page-content__plus"></div>
+						</div>
+						<div class="products-page-content__main-tab-link tab" data-tab="tab2">
+							<div class="products-page-content__title">
+								ДВЕРИ ПВХ
+							</div>
+							<div class="products-page-content__plus"></div>
+						</div>
+						<div class="products-page-content__main-tab-link tab" data-tab="tab3">
+							<div class="products-page-content__title">
+								АЛЮМИНИВЫЕ КОНСТРУКЦИИ
+							</div>
+							<div class="products-page-content__plus"></div>
+						</div>
+						<div class="products-page-content__main-tab-link tab" data-tab="tab4">
+							<div class="products-page-content__title">
+								ПОРТАЛЬНЫЕ СИСТЕМЫ
+							</div>
+							<div class="products-page-content__plus"></div>
+						</div>
+						<div class="products-page-content__main-tab-link tab" data-tab="tab5">
+							<div class="products-page-content__title">
+								НЕСТАНДАРТНЫЕ РЕШЕНИЯ
+							</div>
+							<div class="products-page-content__plus"></div>
+						</div>
+					</div>
+					<div class="products-page-content__content">
+						<div class="products-page-item flex tab-content" id="tab1">
+							<ul class="products-page-item__list">
+								<li class="sub-tab" data-sub-tab="subTab1-tab1">Blitz</li>
+								<li class="sub-tab" data-sub-tab="subTab2-tab1">Constanta</li>
+								<li class="sub-tab" data-sub-tab="subTab3-tab1">Grazio</li>
+								<li class="sub-tab" data-sub-tab="subTab4-tab1">Delight</li>
+								<li class="sub-tab" data-sub-tab="subTab5-tab1">Intelio</li>
+							</ul>
+							<div class="products-page-info class-add sub-tab-content" id="subTab1-tab1">
+								<div class="products-page-info__img"><img src="img/products/page01.webp" alt="products"></div>
+								<div class="products-page-info__text">
+									<div class="products-page-info__title"><b>РЕХАУ</b> INTELIO <b>80</b></div>
+									<div class="products-page-info__subtitle">Область применения и решаемые проблемы</div>
+									<div class="products-page-info__all-text --wp-style-text">
+										<h4>Окна из профилей INTELIO станут прекрасным выбором для:</h4>
+										<ul>
+											<li>Домов с минимальным потреблением энергии</li>
+											<li>Реконструируемых объектов</li>
+											<li>Строительства зданий класса “премиум”</li>
+										</ul>
+										<h4>Система INTELIO используется:</h4>
+										<ul>
+											<li>Для изготовления окон</li>
+											<li>Для балконных дверей</li>
+											<li>Для входной группы</li>
+										</ul>
+										<p>
+											Профиль дает возможность выполнить окна в <b>эксклюзивном дизайне</b> с использованием широчайшего выбора цветов и декора
+										</p>
+									</div>
+									<div class="products-page-info__btn class-click --btn">Подробнее<span></span></div>
+								</div>
+								<div class="products-page-popap">
+									<div class="close-btn class-close"></div>
+									<div class="products-page-popap__row-top flex">
+										<div class="products-page-popap__img">
+											<img src="img/products/page01.webp" alt="image">
+										</div>
+										<div class="products-page-popap__titles">
+											<h3 class="products-page-popap__title --title"><b>РЕХАУ</b> INTELIO <b>80</b></h3>
+											<div class="products-page-popap__subtitle">Основные технические характеристики</div>
+										</div>
+									</div>
+									<div class="products-page-popap-table">
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Характеристика</div>
+											<div class="products-page-popap-table__point">Значение</div>
+											<div class="products-page-popap-table__point">Что это?</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Системная глубина</div>
+											<div class="products-page-popap-table__point"><b>60 мм</b>Видимая ширина комбинации профилей рамы и створки — 105 мм</div>
+											<div class="products-page-popap-table__point">Толщина пластиковой коробки и створки</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Число камер</div>
+											<div class="products-page-popap-table__point"><b>3 камеры</b></div>
+											<div class="products-page-popap-table__point">Воздушные камеры в профиле окна, промежуток между ребрами жесткости в самой раме окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Теплоизоляция</div>
+											<div class="products-page-popap-table__point"><b>R опр. = 0,70 м2°С/Вт</b></div>
+											<div class="products-page-popap-table__point">Чем больше, тем лучше теплоизоляция окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Толщина стеклопакета</div>
+											<div class="products-page-popap-table__point"><b>max до 32 мм</b> <p>Допускается установка одинарного стекла (4 или 6 мм) или однокамерного стеклопакета толщиной 24 мм</p></div>
+											<div class="products-page-popap-table__point">Толстое заполнение позволяет установить многофункциональные энергоэффективные стеклопакеты</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Воздухо- и водонепроницаемость</div>
+											<div class="products-page-popap-table__point">Надёжная защита от сквозняков, пыли и воды. Количество контуров уплотнения — 2 (нахлест уплотнений по 6/8 мм снаружи и внутри). Этого вполне достаточно для надёжной защиты от сквозняков, пыли и протечек</div>
+											<div class="products-page-popap-table__point">Герметичность ПВХ-системы</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Взломобезопасность</div>
+											<div class="products-page-popap-table__point">Установка усиленных приборов запирания благодаря смещению оси приборного паза на 13 мм</div>
+											<div class="products-page-popap-table__point">Позволяет установить надежные приборы запирания</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products-page-info flex sub-tab-content class-add" id="subTab2-tab1">
+								<div class="products-page-info__img"><img src="img/products/page01.webp" alt="products"></div>
+								<div class="products-page-info__text">
+									<div class="products-page-info__title"><b>РЕХАУ</b> INTELIO <b>80</b></div>
+									<div class="products-page-info__subtitle">Область применения и решаемые проблемы</div>
+									
+									<div class="products-page-info__all-text --wp-style-text">
+										<h4>Окна из профилей INTELIO станут прекрасным выбором для:</h4>
+										<ul>
+											<li>Домов с минимальным потреблением энергии</li>
+											<li>Реконструируемых объектов</li>
+											<li>Строительства зданий класса “премиум”</li>
+										</ul>
+										<h4>Система INTELIO используется:</h4>
+										<ul>
+											<li>Для изготовления окон</li>
+											<li>Для балконных дверей</li>
+											<li>Для входной группы</li>
+										</ul>
+										<p>
+											Профиль дает возможность выполнить окна в <b>эксклюзивном дизайне</b> с использованием широчайшего выбора цветов и декора
+										</p>
+									</div>
+									<div class="products-page-info__btn class-click --btn">Подробнее<span></span></div>
+								</div>
+								<div class="products-page-popap">
+									<div class="close-btn class-close"></div>
+									<div class="products-page-popap__row-top flex">
+										<div class="products-page-popap__img">
+											<img src="img/products/page01.webp" alt="image">
+										</div>
+										<div class="products-page-popap__titles">
+											<h3 class="products-page-popap__title --title"><b>РЕХАУ</b> INTELIO <b>80</b></h3>
+											<div class="products-page-popap__subtitle">Основные технические характеристики</div>
+										</div>
+									</div>
+									<div class="products-page-popap-table">
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Характеристика</div>
+											<div class="products-page-popap-table__point">Значение</div>
+											<div class="products-page-popap-table__point">Что это?</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Системная глубина</div>
+											<div class="products-page-popap-table__point"><b>60 мм</b>Видимая ширина комбинации профилей рамы и створки — 105 мм</div>
+											<div class="products-page-popap-table__point">Толщина пластиковой коробки и створки</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Число камер</div>
+											<div class="products-page-popap-table__point"><b>3 камеры</b></div>
+											<div class="products-page-popap-table__point">Воздушные камеры в профиле окна, промежуток между ребрами жесткости в самой раме окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Теплоизоляция</div>
+											<div class="products-page-popap-table__point"><b>R опр. = 0,70 м2°С/Вт</b></div>
+											<div class="products-page-popap-table__point">Чем больше, тем лучше теплоизоляция окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Толщина стеклопакета</div>
+											<div class="products-page-popap-table__point"><b>max до 32 мм</b> <p>Допускается установка одинарного стекла (4 или 6 мм) или однокамерного стеклопакета толщиной 24 мм</p></div>
+											<div class="products-page-popap-table__point">Толстое заполнение позволяет установить многофункциональные энергоэффективные стеклопакеты</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Воздухо- и водонепроницаемость</div>
+											<div class="products-page-popap-table__point">Надёжная защита от сквозняков, пыли и воды. Количество контуров уплотнения — 2 (нахлест уплотнений по 6/8 мм снаружи и внутри). Этого вполне достаточно для надёжной защиты от сквозняков, пыли и протечек</div>
+											<div class="products-page-popap-table__point">Герметичность ПВХ-системы</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Взломобезопасность</div>
+											<div class="products-page-popap-table__point">Установка усиленных приборов запирания благодаря смещению оси приборного паза на 13 мм</div>
+											<div class="products-page-popap-table__point">Позволяет установить надежные приборы запирания</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products-page-info flex sub-tab-content class-add" id="subTab3-tab1">
+								<div class="products-page-info__img"><img src="img/products/page01.webp" alt="products"></div>
+								<div class="products-page-info__text">
+									<div class="products-page-info__title"><b>РЕХАУ</b> INTELIO <b>80</b></div>
+									<div class="products-page-info__subtitle">Область применения и решаемые проблемы</div>
+									
+									<div class="products-page-info__all-text --wp-style-text">
+										<h4>Окна из профилей INTELIO станут прекрасным выбором для:</h4>
+										<ul>
+											<li>Домов с минимальным потреблением энергии</li>
+											<li>Реконструируемых объектов</li>
+											<li>Строительства зданий класса “премиум”</li>
+										</ul>
+										<h4>Система INTELIO используется:</h4>
+										<ul>
+											<li>Для изготовления окон</li>
+											<li>Для балконных дверей</li>
+											<li>Для входной группы</li>
+										</ul>
+										<p>
+											Профиль дает возможность выполнить окна в <b>эксклюзивном дизайне</b> с использованием широчайшего выбора цветов и декора
+										</p>
+									</div>
+									<div class="products-page-info__btn class-click --btn">Подробнее<span></span></div>
+								</div>
+								<div class="products-page-popap">
+									<div class="close-btn class-close"></div>
+									<div class="products-page-popap__row-top flex">
+										<div class="products-page-popap__img">
+											<img src="img/products/page01.webp" alt="image">
+										</div>
+										<div class="products-page-popap__titles">
+											<h3 class="products-page-popap__title --title"><b>РЕХАУ</b> INTELIO <b>80</b></h3>
+											<div class="products-page-popap__subtitle">Основные технические характеристики</div>
+										</div>
+									</div>
+									<div class="products-page-popap-table">
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Характеристика</div>
+											<div class="products-page-popap-table__point">Значение</div>
+											<div class="products-page-popap-table__point">Что это?</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Системная глубина</div>
+											<div class="products-page-popap-table__point"><b>60 мм</b>Видимая ширина комбинации профилей рамы и створки — 105 мм</div>
+											<div class="products-page-popap-table__point">Толщина пластиковой коробки и створки</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Число камер</div>
+											<div class="products-page-popap-table__point"><b>3 камеры</b></div>
+											<div class="products-page-popap-table__point">Воздушные камеры в профиле окна, промежуток между ребрами жесткости в самой раме окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Теплоизоляция</div>
+											<div class="products-page-popap-table__point"><b>R опр. = 0,70 м2°С/Вт</b></div>
+											<div class="products-page-popap-table__point">Чем больше, тем лучше теплоизоляция окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Толщина стеклопакета</div>
+											<div class="products-page-popap-table__point"><b>max до 32 мм</b> <p>Допускается установка одинарного стекла (4 или 6 мм) или однокамерного стеклопакета толщиной 24 мм</p></div>
+											<div class="products-page-popap-table__point">Толстое заполнение позволяет установить многофункциональные энергоэффективные стеклопакеты</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Воздухо- и водонепроницаемость</div>
+											<div class="products-page-popap-table__point">Надёжная защита от сквозняков, пыли и воды. Количество контуров уплотнения — 2 (нахлест уплотнений по 6/8 мм снаружи и внутри). Этого вполне достаточно для надёжной защиты от сквозняков, пыли и протечек</div>
+											<div class="products-page-popap-table__point">Герметичность ПВХ-системы</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Взломобезопасность</div>
+											<div class="products-page-popap-table__point">Установка усиленных приборов запирания благодаря смещению оси приборного паза на 13 мм</div>
+											<div class="products-page-popap-table__point">Позволяет установить надежные приборы запирания</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products-page-info flex sub-tab-content class-add" id="subTab4-tab1">
+								<div class="products-page-info__img"><img src="img/products/page01.webp" alt="products"></div>
+								<div class="products-page-info__text">
+									<div class="products-page-info__title"><b>РЕХАУ</b> INTELIO <b>80</b></div>
+									<div class="products-page-info__subtitle">Область применения и решаемые проблемы</div>
+									
+									<div class="products-page-info__all-text --wp-style-text">
+										<h4>Окна из профилей INTELIO станут прекрасным выбором для:</h4>
+										<ul>
+											<li>Домов с минимальным потреблением энергии</li>
+											<li>Реконструируемых объектов</li>
+											<li>Строительства зданий класса “премиум”</li>
+										</ul>
+										<h4>Система INTELIO используется:</h4>
+										<ul>
+											<li>Для изготовления окон</li>
+											<li>Для балконных дверей</li>
+											<li>Для входной группы</li>
+										</ul>
+										<p>
+											Профиль дает возможность выполнить окна в <b>эксклюзивном дизайне</b> с использованием широчайшего выбора цветов и декора
+										</p>
+									</div>
+									<div class="products-page-info__btn class-click --btn">Подробнее<span></span></div>
+								</div>
+								<div class="products-page-popap">
+									<div class="close-btn class-close"></div>
+									<div class="products-page-popap__row-top flex">
+										<div class="products-page-popap__img">
+											<img src="img/products/page01.webp" alt="image">
+										</div>
+										<div class="products-page-popap__titles">
+											<h3 class="products-page-popap__title --title"><b>РЕХАУ</b> INTELIO <b>80</b></h3>
+											<div class="products-page-popap__subtitle">Основные технические характеристики</div>
+										</div>
+									</div>
+									<div class="products-page-popap-table">
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Характеристика</div>
+											<div class="products-page-popap-table__point">Значение</div>
+											<div class="products-page-popap-table__point">Что это?</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Системная глубина</div>
+											<div class="products-page-popap-table__point"><b>60 мм</b>Видимая ширина комбинации профилей рамы и створки — 105 мм</div>
+											<div class="products-page-popap-table__point">Толщина пластиковой коробки и створки</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Число камер</div>
+											<div class="products-page-popap-table__point"><b>3 камеры</b></div>
+											<div class="products-page-popap-table__point">Воздушные камеры в профиле окна, промежуток между ребрами жесткости в самой раме окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Теплоизоляция</div>
+											<div class="products-page-popap-table__point"><b>R опр. = 0,70 м2°С/Вт</b></div>
+											<div class="products-page-popap-table__point">Чем больше, тем лучше теплоизоляция окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Толщина стеклопакета</div>
+											<div class="products-page-popap-table__point"><b>max до 32 мм</b> <p>Допускается установка одинарного стекла (4 или 6 мм) или однокамерного стеклопакета толщиной 24 мм</p></div>
+											<div class="products-page-popap-table__point">Толстое заполнение позволяет установить многофункциональные энергоэффективные стеклопакеты</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Воздухо- и водонепроницаемость</div>
+											<div class="products-page-popap-table__point">Надёжная защита от сквозняков, пыли и воды. Количество контуров уплотнения — 2 (нахлест уплотнений по 6/8 мм снаружи и внутри). Этого вполне достаточно для надёжной защиты от сквозняков, пыли и протечек</div>
+											<div class="products-page-popap-table__point">Герметичность ПВХ-системы</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Взломобезопасность</div>
+											<div class="products-page-popap-table__point">Установка усиленных приборов запирания благодаря смещению оси приборного паза на 13 мм</div>
+											<div class="products-page-popap-table__point">Позволяет установить надежные приборы запирания</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products-page-info flex sub-tab-content class-add" id="subTab5-tab1">
+								<div class="products-page-info__img"><img src="img/products/page01.webp" alt="products"></div>
+								<div class="products-page-info__text">
+									<div class="products-page-info__title"><b>РЕХАУ</b> INTELIO <b>80</b></div>
+									<div class="products-page-info__subtitle">Область применения и решаемые проблемы</div>
+									
+									<div class="products-page-info__all-text --wp-style-text">
+										<h4>Окна из профилей INTELIO станут прекрасным выбором для:</h4>
+										<ul>
+											<li>Домов с минимальным потреблением энергии</li>
+											<li>Реконструируемых объектов</li>
+											<li>Строительства зданий класса “премиум”</li>
+										</ul>
+										<h4>Система INTELIO используется:</h4>
+										<ul>
+											<li>Для изготовления окон</li>
+											<li>Для балконных дверей</li>
+											<li>Для входной группы</li>
+										</ul>
+										<p>
+											Профиль дает возможность выполнить окна в <b>эксклюзивном дизайне</b> с использованием широчайшего выбора цветов и декора
+										</p>
+									</div>
+									<div class="products-page-info__btn class-click --btn">Подробнее<span></span></div>
+								</div>
+								<div class="products-page-popap">
+									<div class="close-btn class-close"></div>
+									<div class="products-page-popap__row-top flex">
+										<div class="products-page-popap__img">
+											<img src="img/products/page01.webp" alt="image">
+										</div>
+										<div class="products-page-popap__titles">
+											<h3 class="products-page-popap__title --title"><b>РЕХАУ</b> INTELIO <b>80</b></h3>
+											<div class="products-page-popap__subtitle">Основные технические характеристики</div>
+										</div>
+									</div>
+									<div class="products-page-popap-table">
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Характеристика</div>
+											<div class="products-page-popap-table__point">Значение</div>
+											<div class="products-page-popap-table__point">Что это?</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Системная глубина</div>
+											<div class="products-page-popap-table__point"><b>60 мм</b>Видимая ширина комбинации профилей рамы и створки — 105 мм</div>
+											<div class="products-page-popap-table__point">Толщина пластиковой коробки и створки</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Число камер</div>
+											<div class="products-page-popap-table__point"><b>3 камеры</b></div>
+											<div class="products-page-popap-table__point">Воздушные камеры в профиле окна, промежуток между ребрами жесткости в самой раме окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Теплоизоляция</div>
+											<div class="products-page-popap-table__point"><b>R опр. = 0,70 м2°С/Вт</b></div>
+											<div class="products-page-popap-table__point">Чем больше, тем лучше теплоизоляция окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Толщина стеклопакета</div>
+											<div class="products-page-popap-table__point"><b>max до 32 мм</b> <p>Допускается установка одинарного стекла (4 или 6 мм) или однокамерного стеклопакета толщиной 24 мм</p></div>
+											<div class="products-page-popap-table__point">Толстое заполнение позволяет установить многофункциональные энергоэффективные стеклопакеты</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Воздухо- и водонепроницаемость</div>
+											<div class="products-page-popap-table__point">Надёжная защита от сквозняков, пыли и воды. Количество контуров уплотнения — 2 (нахлест уплотнений по 6/8 мм снаружи и внутри). Этого вполне достаточно для надёжной защиты от сквозняков, пыли и протечек</div>
+											<div class="products-page-popap-table__point">Герметичность ПВХ-системы</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Взломобезопасность</div>
+											<div class="products-page-popap-table__point">Установка усиленных приборов запирания благодаря смещению оси приборного паза на 13 мм</div>
+											<div class="products-page-popap-table__point">Позволяет установить надежные приборы запирания</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-page-item flex tab-content" id="tab2">
+							<ul class="products-page-item__list">
+								<li class="sub-tab" data-sub-tab="subTab1-tab2">Blitz</li>
+								<li class="sub-tab" data-sub-tab="subTab2-tab2">Constanta</li>
+							</ul>
+							<div class="products-page-info flex sub-tab-content class-add" id="subTab1-tab2">
+								<div class="products-page-info__img"><img src="img/products/page01.webp" alt="products"></div>
+								<div class="products-page-info__text">
+									<div class="products-page-info__title"><b>РЕХАУ</b> INTELIO <b>80</b></div>
+									<div class="products-page-info__subtitle">Область применения и решаемые проблемы</div>
+									
+									<div class="products-page-info__all-text --wp-style-text">
+										<h4>Окна из профилей INTELIO станут прекрасным выбором для:</h4>
+										<ul>
+											<li>Домов с минимальным потреблением энергии</li>
+											<li>Реконструируемых объектов</li>
+											<li>Строительства зданий класса “премиум”</li>
+										</ul>
+										<h4>Система INTELIO используется:</h4>
+										<ul>
+											<li>Для изготовления окон</li>
+											<li>Для балконных дверей</li>
+											<li>Для входной группы</li>
+										</ul>
+										<p>
+											Профиль дает возможность выполнить окна в <b>эксклюзивном дизайне</b> с использованием широчайшего выбора цветов и декора
+										</p>
+									</div>
+									<div class="products-page-info__btn class-click --btn">Подробнее<span></span></div>
+								</div>
+								<div class="products-page-popap">
+									<div class="close-btn class-close"></div>
+									<div class="products-page-popap__row-top flex">
+										<div class="products-page-popap__img">
+											<img src="img/products/page01.webp" alt="image">
+										</div>
+										<div class="products-page-popap__titles">
+											<h3 class="products-page-popap__title --title"><b>РЕХАУ</b> INTELIO <b>80</b></h3>
+											<div class="products-page-popap__subtitle">Основные технические характеристики</div>
+										</div>
+									</div>
+									<div class="products-page-popap-table">
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Характеристика</div>
+											<div class="products-page-popap-table__point">Значение</div>
+											<div class="products-page-popap-table__point">Что это?</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Системная глубина</div>
+											<div class="products-page-popap-table__point"><b>60 мм</b>Видимая ширина комбинации профилей рамы и створки — 105 мм</div>
+											<div class="products-page-popap-table__point">Толщина пластиковой коробки и створки</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Число камер</div>
+											<div class="products-page-popap-table__point"><b>3 камеры</b></div>
+											<div class="products-page-popap-table__point">Воздушные камеры в профиле окна, промежуток между ребрами жесткости в самой раме окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Теплоизоляция</div>
+											<div class="products-page-popap-table__point"><b>R опр. = 0,70 м2°С/Вт</b></div>
+											<div class="products-page-popap-table__point">Чем больше, тем лучше теплоизоляция окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Толщина стеклопакета</div>
+											<div class="products-page-popap-table__point"><b>max до 32 мм</b> <p>Допускается установка одинарного стекла (4 или 6 мм) или однокамерного стеклопакета толщиной 24 мм</p></div>
+											<div class="products-page-popap-table__point">Толстое заполнение позволяет установить многофункциональные энергоэффективные стеклопакеты</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Воздухо- и водонепроницаемость</div>
+											<div class="products-page-popap-table__point">Надёжная защита от сквозняков, пыли и воды. Количество контуров уплотнения — 2 (нахлест уплотнений по 6/8 мм снаружи и внутри). Этого вполне достаточно для надёжной защиты от сквозняков, пыли и протечек</div>
+											<div class="products-page-popap-table__point">Герметичность ПВХ-системы</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Взломобезопасность</div>
+											<div class="products-page-popap-table__point">Установка усиленных приборов запирания благодаря смещению оси приборного паза на 13 мм</div>
+											<div class="products-page-popap-table__point">Позволяет установить надежные приборы запирания</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products-page-info flex sub-tab-content class-add" id="subTab2-tab2">
+								<div class="products-page-info__img"><img src="img/products/page01.webp" alt="products"></div>
+								<div class="products-page-info__text">
+									<div class="products-page-info__title"><b>РЕХАУ</b> INTELIO <b>80</b></div>
+									<div class="products-page-info__subtitle">Область применения и решаемые проблемы</div>
+									
+									<div class="products-page-info__all-text --wp-style-text">
+										<h4>Окна из профилей INTELIO станут прекрасным выбором для:</h4>
+										<ul>
+											<li>Домов с минимальным потреблением энергии</li>
+											<li>Реконструируемых объектов</li>
+											<li>Строительства зданий класса “премиум”</li>
+										</ul>
+										<h4>Система INTELIO используется:</h4>
+										<ul>
+											<li>Для изготовления окон</li>
+											<li>Для балконных дверей</li>
+											<li>Для входной группы</li>
+										</ul>
+										<p>
+											Профиль дает возможность выполнить окна в <b>эксклюзивном дизайне</b> с использованием широчайшего выбора цветов и декора
+										</p>
+									</div>
+									<div class="products-page-info__btn class-click --btn">Подробнее<span></span></div>
+								</div>
+								<div class="products-page-popap">
+									<div class="close-btn class-close"></div>
+									<div class="products-page-popap__row-top flex">
+										<div class="products-page-popap__img">
+											<img src="img/products/page01.webp" alt="image">
+										</div>
+										<div class="products-page-popap__titles">
+											<h3 class="products-page-popap__title --title"><b>РЕХАУ</b> INTELIO <b>80</b></h3>
+											<div class="products-page-popap__subtitle">Основные технические характеристики</div>
+										</div>
+									</div>
+									<div class="products-page-popap-table">
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Характеристика</div>
+											<div class="products-page-popap-table__point">Значение</div>
+											<div class="products-page-popap-table__point">Что это?</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Системная глубина</div>
+											<div class="products-page-popap-table__point"><b>60 мм</b>Видимая ширина комбинации профилей рамы и створки — 105 мм</div>
+											<div class="products-page-popap-table__point">Толщина пластиковой коробки и створки</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Число камер</div>
+											<div class="products-page-popap-table__point"><b>3 камеры</b></div>
+											<div class="products-page-popap-table__point">Воздушные камеры в профиле окна, промежуток между ребрами жесткости в самой раме окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Теплоизоляция</div>
+											<div class="products-page-popap-table__point"><b>R опр. = 0,70 м2°С/Вт</b></div>
+											<div class="products-page-popap-table__point">Чем больше, тем лучше теплоизоляция окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Толщина стеклопакета</div>
+											<div class="products-page-popap-table__point"><b>max до 32 мм</b> <p>Допускается установка одинарного стекла (4 или 6 мм) или однокамерного стеклопакета толщиной 24 мм</p></div>
+											<div class="products-page-popap-table__point">Толстое заполнение позволяет установить многофункциональные энергоэффективные стеклопакеты</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Воздухо- и водонепроницаемость</div>
+											<div class="products-page-popap-table__point">Надёжная защита от сквозняков, пыли и воды. Количество контуров уплотнения — 2 (нахлест уплотнений по 6/8 мм снаружи и внутри). Этого вполне достаточно для надёжной защиты от сквозняков, пыли и протечек</div>
+											<div class="products-page-popap-table__point">Герметичность ПВХ-системы</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Взломобезопасность</div>
+											<div class="products-page-popap-table__point">Установка усиленных приборов запирания благодаря смещению оси приборного паза на 13 мм</div>
+											<div class="products-page-popap-table__point">Позволяет установить надежные приборы запирания</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-page-item flex tab-content" id="tab3">
+							<ul class="products-page-item__list">
+								<li class="sub-tab" data-sub-tab="subTab1-tab3">Blitz</li>
+								<li class="sub-tab" data-sub-tab="subTab2-tab3">Constanta</li>
+							</ul>
+							<div class="products-page-info flex sub-tab-content class-add" id="subTab1-tab3">
+								<div class="products-page-info__img"><img src="img/products/page01.webp" alt="products"></div>
+								<div class="products-page-info__text">
+									<div class="products-page-info__title"><b>РЕХАУ</b> INTELIO <b>80</b></div>
+									<div class="products-page-info__subtitle">Область применения и решаемые проблемы</div>
+									
+									<div class="products-page-info__all-text --wp-style-text">
+										<h4>Окна из профилей INTELIO станут прекрасным выбором для:</h4>
+										<ul>
+											<li>Домов с минимальным потреблением энергии</li>
+											<li>Реконструируемых объектов</li>
+											<li>Строительства зданий класса “премиум”</li>
+										</ul>
+										<h4>Система INTELIO используется:</h4>
+										<ul>
+											<li>Для изготовления окон</li>
+											<li>Для балконных дверей</li>
+											<li>Для входной группы</li>
+										</ul>
+										<p>
+											Профиль дает возможность выполнить окна в <b>эксклюзивном дизайне</b> с использованием широчайшего выбора цветов и декора
+										</p>
+									</div>
+									<div class="products-page-info__btn class-click --btn">Подробнее<span></span></div>
+								</div>
+								<div class="products-page-popap">
+									<div class="close-btn class-close"></div>
+									<div class="products-page-popap__row-top flex">
+										<div class="products-page-popap__img">
+											<img src="img/products/page01.webp" alt="image">
+										</div>
+										<div class="products-page-popap__titles">
+											<h3 class="products-page-popap__title --title"><b>РЕХАУ</b> INTELIO <b>80</b></h3>
+											<div class="products-page-popap__subtitle">Основные технические характеристики</div>
+										</div>
+									</div>
+									<div class="products-page-popap-table">
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Характеристика</div>
+											<div class="products-page-popap-table__point">Значение</div>
+											<div class="products-page-popap-table__point">Что это?</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Системная глубина</div>
+											<div class="products-page-popap-table__point"><b>60 мм</b>Видимая ширина комбинации профилей рамы и створки — 105 мм</div>
+											<div class="products-page-popap-table__point">Толщина пластиковой коробки и створки</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Число камер</div>
+											<div class="products-page-popap-table__point"><b>3 камеры</b></div>
+											<div class="products-page-popap-table__point">Воздушные камеры в профиле окна, промежуток между ребрами жесткости в самой раме окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Теплоизоляция</div>
+											<div class="products-page-popap-table__point"><b>R опр. = 0,70 м2°С/Вт</b></div>
+											<div class="products-page-popap-table__point">Чем больше, тем лучше теплоизоляция окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Толщина стеклопакета</div>
+											<div class="products-page-popap-table__point"><b>max до 32 мм</b> <p>Допускается установка одинарного стекла (4 или 6 мм) или однокамерного стеклопакета толщиной 24 мм</p></div>
+											<div class="products-page-popap-table__point">Толстое заполнение позволяет установить многофункциональные энергоэффективные стеклопакеты</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Воздухо- и водонепроницаемость</div>
+											<div class="products-page-popap-table__point">Надёжная защита от сквозняков, пыли и воды. Количество контуров уплотнения — 2 (нахлест уплотнений по 6/8 мм снаружи и внутри). Этого вполне достаточно для надёжной защиты от сквозняков, пыли и протечек</div>
+											<div class="products-page-popap-table__point">Герметичность ПВХ-системы</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Взломобезопасность</div>
+											<div class="products-page-popap-table__point">Установка усиленных приборов запирания благодаря смещению оси приборного паза на 13 мм</div>
+											<div class="products-page-popap-table__point">Позволяет установить надежные приборы запирания</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products-page-info flex sub-tab-content class-add" id="subTab2-tab3">
+								<div class="products-page-info__img"><img src="img/products/page01.webp" alt="products"></div>
+								<div class="products-page-info__text">
+									<div class="products-page-info__title"><b>РЕХАУ</b> INTELIO <b>80</b></div>
+									<div class="products-page-info__subtitle">Область применения и решаемые проблемы</div>
+									
+									<div class="products-page-info__all-text --wp-style-text">
+										<h4>Окна из профилей INTELIO станут прекрасным выбором для:</h4>
+										<ul>
+											<li>Домов с минимальным потреблением энергии</li>
+											<li>Реконструируемых объектов</li>
+											<li>Строительства зданий класса “премиум”</li>
+										</ul>
+										<h4>Система INTELIO используется:</h4>
+										<ul>
+											<li>Для изготовления окон</li>
+											<li>Для балконных дверей</li>
+											<li>Для входной группы</li>
+										</ul>
+										<p>
+											Профиль дает возможность выполнить окна в <b>эксклюзивном дизайне</b> с использованием широчайшего выбора цветов и декора
+										</p>
+									</div>
+									<div class="products-page-info__btn class-click --btn">Подробнее<span></span></div>
+								</div>
+								<div class="products-page-popap">
+									<div class="close-btn class-close"></div>
+									<div class="products-page-popap__row-top flex">
+										<div class="products-page-popap__img">
+											<img src="img/products/page01.webp" alt="image">
+										</div>
+										<div class="products-page-popap__titles">
+											<h3 class="products-page-popap__title --title"><b>РЕХАУ</b> INTELIO <b>80</b></h3>
+											<div class="products-page-popap__subtitle">Основные технические характеристики</div>
+										</div>
+									</div>
+									<div class="products-page-popap-table">
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Характеристика</div>
+											<div class="products-page-popap-table__point">Значение</div>
+											<div class="products-page-popap-table__point">Что это?</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Системная глубина</div>
+											<div class="products-page-popap-table__point"><b>60 мм</b>Видимая ширина комбинации профилей рамы и створки — 105 мм</div>
+											<div class="products-page-popap-table__point">Толщина пластиковой коробки и створки</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Число камер</div>
+											<div class="products-page-popap-table__point"><b>3 камеры</b></div>
+											<div class="products-page-popap-table__point">Воздушные камеры в профиле окна, промежуток между ребрами жесткости в самой раме окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Теплоизоляция</div>
+											<div class="products-page-popap-table__point"><b>R опр. = 0,70 м2°С/Вт</b></div>
+											<div class="products-page-popap-table__point">Чем больше, тем лучше теплоизоляция окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Толщина стеклопакета</div>
+											<div class="products-page-popap-table__point"><b>max до 32 мм</b> <p>Допускается установка одинарного стекла (4 или 6 мм) или однокамерного стеклопакета толщиной 24 мм</p></div>
+											<div class="products-page-popap-table__point">Толстое заполнение позволяет установить многофункциональные энергоэффективные стеклопакеты</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Воздухо- и водонепроницаемость</div>
+											<div class="products-page-popap-table__point">Надёжная защита от сквозняков, пыли и воды. Количество контуров уплотнения — 2 (нахлест уплотнений по 6/8 мм снаружи и внутри). Этого вполне достаточно для надёжной защиты от сквозняков, пыли и протечек</div>
+											<div class="products-page-popap-table__point">Герметичность ПВХ-системы</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Взломобезопасность</div>
+											<div class="products-page-popap-table__point">Установка усиленных приборов запирания благодаря смещению оси приборного паза на 13 мм</div>
+											<div class="products-page-popap-table__point">Позволяет установить надежные приборы запирания</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-page-item flex tab-content" id="tab4">
+							<ul class="products-page-item__list">
+								<li class="sub-tab" data-sub-tab="subTab1-tab4">Blitz</li>
+								<li class="sub-tab" data-sub-tab="subTab2-tab4">Constanta</li>
+							</ul>
+							<div class="products-page-info flex sub-tab-content class-add" id="subTab1-tab4">
+								<div class="products-page-info__img"><img src="img/products/page01.webp" alt="products"></div>
+								<div class="products-page-info__text">
+									<div class="products-page-info__title"><b>РЕХАУ</b> INTELIO <b>80</b></div>
+									<div class="products-page-info__subtitle">Область применения и решаемые проблемы</div>
+									
+									<div class="products-page-info__all-text --wp-style-text">
+										<h4>Окна из профилей INTELIO станут прекрасным выбором для:</h4>
+										<ul>
+											<li>Домов с минимальным потреблением энергии</li>
+											<li>Реконструируемых объектов</li>
+											<li>Строительства зданий класса “премиум”</li>
+										</ul>
+										<h4>Система INTELIO используется:</h4>
+										<ul>
+											<li>Для изготовления окон</li>
+											<li>Для балконных дверей</li>
+											<li>Для входной группы</li>
+										</ul>
+										<p>
+											Профиль дает возможность выполнить окна в <b>эксклюзивном дизайне</b> с использованием широчайшего выбора цветов и декора
+										</p>
+									</div>
+									<div class="products-page-info__btn class-click --btn">Подробнее<span></span></div>
+								</div>
+								<div class="products-page-popap">
+									<div class="close-btn class-close"></div>
+									<div class="products-page-popap__row-top flex">
+										<div class="products-page-popap__img">
+											<img src="img/products/page01.webp" alt="image">
+										</div>
+										<div class="products-page-popap__titles">
+											<h3 class="products-page-popap__title --title"><b>РЕХАУ</b> INTELIO <b>80</b></h3>
+											<div class="products-page-popap__subtitle">Основные технические характеристики</div>
+										</div>
+									</div>
+									<div class="products-page-popap-table">
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Характеристика</div>
+											<div class="products-page-popap-table__point">Значение</div>
+											<div class="products-page-popap-table__point">Что это?</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Системная глубина</div>
+											<div class="products-page-popap-table__point"><b>60 мм</b>Видимая ширина комбинации профилей рамы и створки — 105 мм</div>
+											<div class="products-page-popap-table__point">Толщина пластиковой коробки и створки</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Число камер</div>
+											<div class="products-page-popap-table__point"><b>3 камеры</b></div>
+											<div class="products-page-popap-table__point">Воздушные камеры в профиле окна, промежуток между ребрами жесткости в самой раме окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Теплоизоляция</div>
+											<div class="products-page-popap-table__point"><b>R опр. = 0,70 м2°С/Вт</b></div>
+											<div class="products-page-popap-table__point">Чем больше, тем лучше теплоизоляция окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Толщина стеклопакета</div>
+											<div class="products-page-popap-table__point"><b>max до 32 мм</b> <p>Допускается установка одинарного стекла (4 или 6 мм) или однокамерного стеклопакета толщиной 24 мм</p></div>
+											<div class="products-page-popap-table__point">Толстое заполнение позволяет установить многофункциональные энергоэффективные стеклопакеты</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Воздухо- и водонепроницаемость</div>
+											<div class="products-page-popap-table__point">Надёжная защита от сквозняков, пыли и воды. Количество контуров уплотнения — 2 (нахлест уплотнений по 6/8 мм снаружи и внутри). Этого вполне достаточно для надёжной защиты от сквозняков, пыли и протечек</div>
+											<div class="products-page-popap-table__point">Герметичность ПВХ-системы</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Взломобезопасность</div>
+											<div class="products-page-popap-table__point">Установка усиленных приборов запирания благодаря смещению оси приборного паза на 13 мм</div>
+											<div class="products-page-popap-table__point">Позволяет установить надежные приборы запирания</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products-page-info flex sub-tab-content class-add" id="subTab2-tab4">
+								<div class="products-page-info__img"><img src="img/products/page01.webp" alt="products"></div>
+								<div class="products-page-info__text">
+									<div class="products-page-info__title"><b>РЕХАУ</b> INTELIO <b>80</b></div>
+									<div class="products-page-info__subtitle">Область применения и решаемые проблемы</div>
+									
+									<div class="products-page-info__all-text --wp-style-text">
+										<h4>Окна из профилей INTELIO станут прекрасным выбором для:</h4>
+										<ul>
+											<li>Домов с минимальным потреблением энергии</li>
+											<li>Реконструируемых объектов</li>
+											<li>Строительства зданий класса “премиум”</li>
+										</ul>
+										<h4>Система INTELIO используется:</h4>
+										<ul>
+											<li>Для изготовления окон</li>
+											<li>Для балконных дверей</li>
+											<li>Для входной группы</li>
+										</ul>
+										<p>
+											Профиль дает возможность выполнить окна в <b>эксклюзивном дизайне</b> с использованием широчайшего выбора цветов и декора
+										</p>
+									</div>
+									<div class="products-page-info__btn class-click --btn">Подробнее<span></span></div>
+								</div>
+								<div class="products-page-popap">
+									<div class="close-btn class-close"></div>
+									<div class="products-page-popap__row-top flex">
+										<div class="products-page-popap__img">
+											<img src="img/products/page01.webp" alt="image">
+										</div>
+										<div class="products-page-popap__titles">
+											<h3 class="products-page-popap__title --title"><b>РЕХАУ</b> INTELIO <b>80</b></h3>
+											<div class="products-page-popap__subtitle">Основные технические характеристики</div>
+										</div>
+									</div>
+									<div class="products-page-popap-table">
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Характеристика</div>
+											<div class="products-page-popap-table__point">Значение</div>
+											<div class="products-page-popap-table__point">Что это?</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Системная глубина</div>
+											<div class="products-page-popap-table__point"><b>60 мм</b>Видимая ширина комбинации профилей рамы и створки — 105 мм</div>
+											<div class="products-page-popap-table__point">Толщина пластиковой коробки и створки</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Число камер</div>
+											<div class="products-page-popap-table__point"><b>3 камеры</b></div>
+											<div class="products-page-popap-table__point">Воздушные камеры в профиле окна, промежуток между ребрами жесткости в самой раме окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Теплоизоляция</div>
+											<div class="products-page-popap-table__point"><b>R опр. = 0,70 м2°С/Вт</b></div>
+											<div class="products-page-popap-table__point">Чем больше, тем лучше теплоизоляция окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Толщина стеклопакета</div>
+											<div class="products-page-popap-table__point"><b>max до 32 мм</b> <p>Допускается установка одинарного стекла (4 или 6 мм) или однокамерного стеклопакета толщиной 24 мм</p></div>
+											<div class="products-page-popap-table__point">Толстое заполнение позволяет установить многофункциональные энергоэффективные стеклопакеты</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Воздухо- и водонепроницаемость</div>
+											<div class="products-page-popap-table__point">Надёжная защита от сквозняков, пыли и воды. Количество контуров уплотнения — 2 (нахлест уплотнений по 6/8 мм снаружи и внутри). Этого вполне достаточно для надёжной защиты от сквозняков, пыли и протечек</div>
+											<div class="products-page-popap-table__point">Герметичность ПВХ-системы</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Взломобезопасность</div>
+											<div class="products-page-popap-table__point">Установка усиленных приборов запирания благодаря смещению оси приборного паза на 13 мм</div>
+											<div class="products-page-popap-table__point">Позволяет установить надежные приборы запирания</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-page-item flex tab-content" id="tab5">
+							<ul class="products-page-item__list">
+								<li class="sub-tab" data-sub-tab="subTab1-tab5">Blitz</li>
+								<li class="sub-tab" data-sub-tab="subTab2-tab5">Constanta</li>
+							</ul>
+							<div class="products-page-info flex sub-tab-content class-add" id="subTab1-tab5">
+								<div class="products-page-info__img"><img src="img/products/page01.webp" alt="products"></div>
+								<div class="products-page-info__text">
+									<div class="products-page-info__title"><b>РЕХАУ</b> INTELIO <b>80</b></div>
+									<div class="products-page-info__subtitle">Область применения и решаемые проблемы</div>
+									
+									<div class="products-page-info__all-text --wp-style-text">
+										<h4>Окна из профилей INTELIO станут прекрасным выбором для:</h4>
+										<ul>
+											<li>Домов с минимальным потреблением энергии</li>
+											<li>Реконструируемых объектов</li>
+											<li>Строительства зданий класса “премиум”</li>
+										</ul>
+										<h4>Система INTELIO используется:</h4>
+										<ul>
+											<li>Для изготовления окон</li>
+											<li>Для балконных дверей</li>
+											<li>Для входной группы</li>
+										</ul>
+										<p>
+											Профиль дает возможность выполнить окна в <b>эксклюзивном дизайне</b> с использованием широчайшего выбора цветов и декора
+										</p>
+									</div>
+									<div class="products-page-info__btn class-click --btn">Подробнее<span></span></div>
+								</div>
+								<div class="products-page-popap">
+									<div class="close-btn class-close"></div>
+									<div class="products-page-popap__row-top flex">
+										<div class="products-page-popap__img">
+											<img src="img/products/page01.webp" alt="image">
+										</div>
+										<div class="products-page-popap__titles">
+											<h3 class="products-page-popap__title --title"><b>РЕХАУ</b> INTELIO <b>80</b></h3>
+											<div class="products-page-popap__subtitle">Основные технические характеристики</div>
+										</div>
+									</div>
+									<div class="products-page-popap-table">
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Характеристика</div>
+											<div class="products-page-popap-table__point">Значение</div>
+											<div class="products-page-popap-table__point">Что это?</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Системная глубина</div>
+											<div class="products-page-popap-table__point"><b>60 мм</b>Видимая ширина комбинации профилей рамы и створки — 105 мм</div>
+											<div class="products-page-popap-table__point">Толщина пластиковой коробки и створки</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Число камер</div>
+											<div class="products-page-popap-table__point"><b>3 камеры</b></div>
+											<div class="products-page-popap-table__point">Воздушные камеры в профиле окна, промежуток между ребрами жесткости в самой раме окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Теплоизоляция</div>
+											<div class="products-page-popap-table__point"><b>R опр. = 0,70 м2°С/Вт</b></div>
+											<div class="products-page-popap-table__point">Чем больше, тем лучше теплоизоляция окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Толщина стеклопакета</div>
+											<div class="products-page-popap-table__point"><b>max до 32 мм</b> <p>Допускается установка одинарного стекла (4 или 6 мм) или однокамерного стеклопакета толщиной 24 мм</p></div>
+											<div class="products-page-popap-table__point">Толстое заполнение позволяет установить многофункциональные энергоэффективные стеклопакеты</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Воздухо- и водонепроницаемость</div>
+											<div class="products-page-popap-table__point">Надёжная защита от сквозняков, пыли и воды. Количество контуров уплотнения — 2 (нахлест уплотнений по 6/8 мм снаружи и внутри). Этого вполне достаточно для надёжной защиты от сквозняков, пыли и протечек</div>
+											<div class="products-page-popap-table__point">Герметичность ПВХ-системы</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Взломобезопасность</div>
+											<div class="products-page-popap-table__point">Установка усиленных приборов запирания благодаря смещению оси приборного паза на 13 мм</div>
+											<div class="products-page-popap-table__point">Позволяет установить надежные приборы запирания</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products-page-info flex sub-tab-content class-add" id="subTab2-tab5">
+								<div class="products-page-info__img"><img src="img/products/page01.webp" alt="products"></div>
+								<div class="products-page-info__text">
+									<div class="products-page-info__title"><b>РЕХАУ</b> INTELIO <b>80</b></div>
+									<div class="products-page-info__subtitle">Область применения и решаемые проблемы</div>
+									
+									<div class="products-page-info__all-text --wp-style-text">
+										<h4>Окна из профилей INTELIO станут прекрасным выбором для:</h4>
+										<ul>
+											<li>Домов с минимальным потреблением энергии</li>
+											<li>Реконструируемых объектов</li>
+											<li>Строительства зданий класса “премиум”</li>
+										</ul>
+										<h4>Система INTELIO используется:</h4>
+										<ul>
+											<li>Для изготовления окон</li>
+											<li>Для балконных дверей</li>
+											<li>Для входной группы</li>
+										</ul>
+										<p>
+											Профиль дает возможность выполнить окна в <b>эксклюзивном дизайне</b> с использованием широчайшего выбора цветов и декора
+										</p>
+									</div>
+									<div class="products-page-info__btn class-click --btn">Подробнее<span></span></div>
+								</div>
+								<div class="products-page-popap">
+									<div class="close-btn class-close"></div>
+									<div class="products-page-popap__row-top flex">
+										<div class="products-page-popap__img">
+											<img src="img/products/page01.webp" alt="image">
+										</div>
+										<div class="products-page-popap__titles">
+											<h3 class="products-page-popap__title --title"><b>РЕХАУ</b> INTELIO <b>80</b></h3>
+											<div class="products-page-popap__subtitle">Основные технические характеристики</div>
+										</div>
+									</div>
+									<div class="products-page-popap-table">
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Характеристика</div>
+											<div class="products-page-popap-table__point">Значение</div>
+											<div class="products-page-popap-table__point">Что это?</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Системная глубина</div>
+											<div class="products-page-popap-table__point"><b>60 мм</b>Видимая ширина комбинации профилей рамы и створки — 105 мм</div>
+											<div class="products-page-popap-table__point">Толщина пластиковой коробки и створки</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Число камер</div>
+											<div class="products-page-popap-table__point"><b>3 камеры</b></div>
+											<div class="products-page-popap-table__point">Воздушные камеры в профиле окна, промежуток между ребрами жесткости в самой раме окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Теплоизоляция</div>
+											<div class="products-page-popap-table__point"><b>R опр. = 0,70 м2°С/Вт</b></div>
+											<div class="products-page-popap-table__point">Чем больше, тем лучше теплоизоляция окна</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Толщина стеклопакета</div>
+											<div class="products-page-popap-table__point"><b>max до 32 мм</b> <p>Допускается установка одинарного стекла (4 или 6 мм) или однокамерного стеклопакета толщиной 24 мм</p></div>
+											<div class="products-page-popap-table__point">Толстое заполнение позволяет установить многофункциональные энергоэффективные стеклопакеты</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Воздухо- и водонепроницаемость</div>
+											<div class="products-page-popap-table__point">Надёжная защита от сквозняков, пыли и воды. Количество контуров уплотнения — 2 (нахлест уплотнений по 6/8 мм снаружи и внутри). Этого вполне достаточно для надёжной защиты от сквозняков, пыли и протечек</div>
+											<div class="products-page-popap-table__point">Герметичность ПВХ-системы</div>
+										</div>
+										<div class="products-page-popap-table__item">
+											<div class="products-page-popap-table__point">Взломобезопасность</div>
+											<div class="products-page-popap-table__point">Установка усиленных приборов запирания благодаря смещению оси приборного паза на 13 мм</div>
+											<div class="products-page-popap-table__point">Позволяет установить надежные приборы запирания</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer class="footer">
+	<div class="container">
+		<div class="footer__row">
+			<div class="footer__item">
+				<h3 class="footer__item-title">
+					Навигация
+				</h3>
+				<div class="footer__item-select">
+					<div class="footer-city-default">Город: <span class="footer__city-select">Ижевск</span></div>
+					  <ul class="footer__city-list">
+						<li><a href="#">Ижевск</a></li>
+						<li><a href="#">Самара</a></li>
+						<li><a href="#">Екатеринбург</a></li>
+						<li><a href="#">Нижний Новгород</a></li>
+						<li><a href="#">Набережные челны</a></li>
+						<li><a href="#">Самара</a></li>
+						<li><a href="#">Самара</a></li>
+					  </ul> 
+				 </div>
+				<ul class="footer__item-list">
+					<li><a href="#">Дилерская сеть</a></li>
+					<li><a href="#">Продукция</a></li>
+					<li><a href="#">О заводе</a></li>
+					<li><a href="#">Статьи</a></li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<h3 class="footer__item-title">
+					Компания
+				</h3>
+				<ul class="footer__item-list">
+					<li><a href="#">Дилерам и строителям</a></li>
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Сертификаты</a></li>
+					<li><a href="#">Офисы продаж</a></li>
+					<li><a href="#">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<h3 class="footer__item-title">
+					Контакты
+				</h3>
+				<ul class="footer__item-list footer__item-social">
+					<li><a href="tel:88001003197">Номер горячей линии<br> 8 800 100 31 97</a></li>
+					<li><a href="#">Telegram</a></li>
+					<li><a href="#">Вконтакте</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<div class="footer-bottom">
+	<div class="container">
+		<ul class="footer-bottom__row flex">
+			<ul class="footer-bottom__list flex">
+				<li><a href="#">Варианты оплаты</a></li>
+				<li><a href="#">Инструкции по эксплуатации</a></li>
+				<li><a href="#">Полезные советы</a></li>
+			</ul>
+			<ul class="footer-bottom__social flex">
+				<li><a href="#"><img src="img/icons/footer/01.svg" alt="social"></a></li>
+				<li><a href="#"><img src="img/icons/footer/02.svg" alt="social"></a></li>
+				<li><a href="#"><img src="img/icons/footer/03.svg" alt="social"></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-bottom__bottom-center">© «FAVORIT» Ижевск 2023 г.</div>
+</footer>
+
+</div>
+	<script src="js/swiper-bundle.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

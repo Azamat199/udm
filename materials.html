@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Gulp pack for easy html/php markup development">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<link rel="stylesheet"
+				href="css/swiper-bundle.min.css">
+	<title>Easy-webdev-startpack v3.0</title>
+</head>
+
+
+<body>
+<div class="wrapper">
+	<header class="header">
+	<div class="offcanvas-menu-overlay"></div>
+	<div class="top-header">
+		<div class="offcanvas-top-header"></div>
+		<div class="container flex">
+			<div class="top-header__city">
+				<div class="top-header__main-city class-click">
+					<span class="header-city --text-mini"><img src="img/icons/header/location.svg" alt="location"> Сарапул</span>
+				</div>
+				<div class="top-header__list-cities class-add">
+	<h3 class="top-header__list-title">Ваш город</h3>
+	<div class="close-btn class-close"></div>
+	<div class="top-header__cities-search">
+		<input type="text" id="searchInput" placeholder="Не нашли город? Воспользуйтесь поиском">
+	</div>
+	<ul class="top-header__city-cities flex-wrap" id="cityList">
+		<li><a href="#">Самара</a></li>
+		<li><a href="#">Ижевск</a></li>
+		<li><a href="#">Екатеринбург</a></li>
+		<li><a href="#">Нижний Новгород</a></li>
+		<li><a href="#">Набережные челны</a></li>
+		<li><a href="#">Самара</a></li>
+		<li><a href="#">Самара</a></li>
+		<li><a href="#">Самара</a></li>
+		<li><a href="#">Ижевск</a></li>
+		<li><a href="#">Екатеринбург</a></li>
+		<li><a href="#">Нижний Новгород</a></li>
+		<li><a href="#">Набережные челны</a></li>
+		<li><a href="#">Самара</a></li>
+		<li><a href="#">Самара</a></li>
+	</ul>
+</div>
+
+			</div>
+			<!-- <nav class="top-header__menu">
+				<ul class="top-header__list flex --text-middle">
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Сертификаты</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav> -->
+			<div class="top-header__social flex-wrap">
+				<div class="top-header__social-img"><a href="#"><img src="img/icons/header/vk.svg" alt="location"></a></div>
+				<div class="top-header__social-img"><a href="#"><img src="img/icons/header/telega.svg" alt="location"></a></div>
+				<div class="top-header__cabinet --text-middle"><a href="#">Личный кабинет</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="middle-header flex">
+			<div class="middle-header__left flex">
+				<a href="/" class="middle-header__logo"><img src="img/logo/logo.svg" alt="logo"></a>
+				<span class="middle-header__border"></span>
+				<a href="/" class="middle-header__rehau"><img src="img/logo/logo-rexay.svg" alt="rexay"></a>
+			</div>
+			<div class="middle-header__right flex">
+				<a href="tel:8(800)1003197" class="middle-header__phone">8 (800) 100 31 97</a>
+				<div class="header-burger"><span></span></div>
+				<div class="middle-header__back-call --btn">Заказать звонок</div>
+			</div>
+		</div>
+		<nav class="header-menu">
+			<ul class="header-menu__list flex-wrap --text-mini">
+				<li><a href="#">Продукция</a>
+					<ul class="sub-menu">
+						<li><a href="#">Остекление</a>
+							<ul class="sub-menu">
+								<li><a href="#">Остекление домов</a></li>
+								<li><a href="#">Остекление балконов и лоджий</a></li>
+								<li><a href="#">Отделка балконов и лоджий</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Двери</a></li>
+						<li><a href="#">Портальные системы</a></li>
+						<li><a href="#">Окна</a></li>
+						<li><a href="#">Конструкции из алюминия</a></li>
+						<li><a href="#">Нестандартные решения</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Материалы</a>
+					<ul class="sub-menu">
+						<li><a href="#">Профили ПВХ</a>
+							<ul class="sub-menu">
+								<li><a href="#">Rehau</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Алюминий</a>
+							<ul class="sub-menu">
+								<li><a href="#">Krauss</a></li>
+								<li><a href="#">Provedal</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Аксессуары</a>
+							<ul class="sub-menu">
+								<li><a href="#">Подставочный профиль</a></li>
+								<li><a href="#">Ручки</a></li>
+								<li><a href="#">Подоконники</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Стекла</a></li>
+						<li><a href="#">Сертификаты</a>
+							<ul class="sub-menu">
+								<li><a href="#">Прототипы испытаний</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Фурнитура</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Дилерам</a></li>
+				<li><a href="#">Адреса</a></li>
+				<li><a href="#">О заводе</a></li>
+			</ul>
+			<a href="tel:8(800)1003197" class="middle-header__phone">8 (800) 100 31 97</a>
+		</nav>
+	</div>
+</header>
+
+	<div class="content">
+		<section class="products-page --margin-block">
+			<div class="container">
+				<h1 class="products-page__title --title">Материалы</h1>
+				<div class="products-page-content">
+					<div class="products-page-content__titles">
+						<div class="products-page-content__main-tab-link tab" data-tab="tab1">
+							<div class="products-page-content__title">
+								Профили
+							</div>
+							<div class="products-page-content__plus"></div>
+						</div>
+						<div class="products-page-content__main-tab-link tab" data-tab="tab2">
+							<div class="products-page-content__title">
+								Алюминий
+							</div>
+							<div class="products-page-content__plus"></div>
+						</div>
+						<div class="products-page-content__main-tab-link tab" data-tab="tab3">
+							<div class="products-page-content__title">
+								Стекла
+							</div>
+							<div class="products-page-content__plus"></div>
+						</div>
+						<div class="products-page-content__main-tab-link tab" data-tab="tab4">
+							<div class="products-page-content__title">
+								Сертификаты
+							</div>
+							<div class="products-page-content__plus"></div>
+						</div>
+						<div class="products-page-content__main-tab-link tab" data-tab="tab5">
+							<div class="products-page-content__title">
+								Фурнитура
+							</div>
+							<div class="products-page-content__plus"></div>
+						</div>
+						<div class="products-page-content__main-tab-link tab" data-tab="tab6">
+							<div class="products-page-content__title">
+								Аксессуары
+							</div>
+							<div class="products-page-content__plus"></div>
+						</div>
+						<div class="products-page-content__main-tab-link tab" data-tab="tab7">
+							<div class="products-page-content__title">
+								Комплектующие
+							</div>
+							<div class="products-page-content__plus"></div>
+						</div>
+					</div>
+					<div class="products-page-content__content materials-chapter">
+						<div class="products-page-info products-page-item flex tab-content profile-add" id="tab1">
+							<ul class="products-page-item__list">
+								<li class="sub-tab" data-sub-tab="subTab1-tab1">Blitz</li>
+								<li class="sub-tab" data-sub-tab="subTab2-tab1">Constanta</li>
+								<li class="sub-tab" data-sub-tab="subTab3-tab1">Delight</li>
+								<li class="sub-tab" data-sub-tab="subTab4-tab1">Grazio</li>
+								<li class="sub-tab" data-sub-tab="subTab5-tab1">Intelio</li>
+							</ul>
+							<div class="sub-tab-content" id="subTab1-tab1">
+								<div class="materials-chapter-profiles">
+									<h2 class="materials-chapter__title">Мы используем	немецкие профили</h2>
+									<div class="materials-chapter-profiles__row flex">
+										<div class="materials-chapter-profiles__mini-left">
+											<img src="img/materials/profiles/rexay.webp" alt="rexay">
+										</div>
+										<div class="materials-chapter-profiles__big-right --materials-chapter-text">
+											Они изготовлены из проверенного материала, не боятся испытания временем, отлично себя зарекомендовали в самых разных климатических условиях.<b>На все линейки</b> из профиля РЕХАУ распространяется <b>гарантия сроком на 5 лет.</b>
+										</div>
+									</div>
+									<div class="materials-chapter-profiles__row flex">
+										<div class="materials-chapter-profiles__left">
+											<img src="img/materials/profiles/BLITZ-01.webp" alt="profiles">
+										</div>
+										<div class="materials-chapter-profiles__right">
+											<img src="img/materials/profiles/BLITZ-02.webp" alt="profiles">
+										</div>
+									</div>
+									<div class="materials-chapter-profiles__brend-text --materials-chapter-text">
+										<img src="img/materials/profiles/BLITZ.webp" alt="BLITZ">– базовая система в продуктовой линейке REHAU, разработанная в
+										соответствии с наиболее актуальными запросами российских потребителей.
+										Это надежные окна, которые эффективно сохраняют тепло, защищают дом от
+										уличного шума и легко вписываются в любой интерьер.
+									</div>
+									<div class="materials-chapter-profiles__btn profile-click --btn" id="blitzClick">Подробнее<span></span></div>
+								</div>
+							</div>
+							<div class="sub-tab-content" id="subTab2-tab1">
+								<div class="materials-chapter-profiles">
+									<h2 class="materials-chapter__title">Мы используем	немецкие профили</h2>
+									<div class="materials-chapter-profiles__row flex">
+										<div class="materials-chapter-profiles__mini-left">
+											<img src="img/materials/profiles/rexay.webp" alt="rexay">
+										</div>
+										<div class="materials-chapter-profiles__big-right --materials-chapter-text">
+											Они изготовлены из проверенного материала, не боятся испытания временем, отлично себя зарекомендовали в самых разных климатических условиях.<b>На все линейки</b> из профиля РЕХАУ распространяется <b>гарантия сроком на 5 лет.</b>
+										</div>
+									</div>
+									<div class="materials-chapter-profiles__row flex">
+										<div class="materials-chapter-profiles__left">
+											<img src="img/materials/profiles/Constanta-01.webp" alt="profiles">
+										</div>
+										<div class="materials-chapter-profiles__right">
+											<img src="img/materials/profiles/Constanta-02.webp" alt="profiles">
+										</div>
+									</div>
+									<div class="materials-chapter-profiles__brend-text --materials-chapter-text">
+										<img src="img/materials/profiles/Constanta.webp" alt="Constanta">– это больше света и панорамный вид: увеличенное на 50%
+										содержание стекловолокна в оконной створке приводит к повышению жестко-
+										сти профиля, что делает данный профиль основой для беспрецедентного уве-
+										личения габаритных размеров окон. Данное свойство позволяет реализовать
+										проектные решения с панорамными окнами высотой до 2,90 м. Результат: еще
+										больше естественного света в помещении и свобода архитектурных решений
+										для создания неповторимого характера вашего дома.
+									</div>
+									<div class="materials-chapter-profiles__btn profile-click --btn" id="constantaClick">Подробнее<span></span></div>
+								</div>
+							</div>
+							<div class="sub-tab-content" id="subTab3-tab1">
+								<div class="materials-chapter-profiles">
+									<h2 class="materials-chapter__title">Мы используем	немецкие профили</h2>
+									<div class="materials-chapter-profiles__row flex">
+										<div class="materials-chapter-profiles__mini-left">
+											<img src="img/materials/profiles/rexay.webp" alt="rexay">
+										</div>
+										<div class="materials-chapter-profiles__big-right --materials-chapter-text">
+											Они изготовлены из проверенного материала, не боятся испытания временем, отлично себя зарекомендовали в самых разных климатических условиях.<b>На все линейки</b> из профиля РЕХАУ распространяется <b>гарантия сроком на 5 лет.</b>
+										</div>
+									</div>
+									<div class="materials-chapter-profiles__row flex">
+										<div class="materials-chapter-profiles__left">
+											<img src="img/materials/profiles/DELIGHT-01.webp" alt="profiles">
+										</div>
+										<div class="materials-chapter-profiles__right">
+											<img src="img/materials/profiles/DELIGHT-02.webp" alt="profiles">
+										</div>
+									</div>
+									<div class="materials-chapter-profiles__brend-text --materials-chapter-text">
+										<img src="img/materials/profiles/DELIGHT.webp" alt="DELIGHT">– окна из профилей DELIGHT станут отличным вложением
+										Ваших средств для ценителей атмосферы света, тепла и уюта, индивидуаль-
+										ного дизайна и высокой функциональности. Ноу-хау технического решения
+										DELIGHT-Design дает возможность сократить высоту профильной конструкции
+										и впустить в помещение на 10% больше света по сравнению с обычными
+										окнами. А это — больше радости и хорошего самочувствия!
+									</div>
+									<div class="materials-chapter-profiles__btn profile-click --btn" id="delightClick">Подробнее<span></span></div>
+								</div>
+							</div>
+							<div class="sub-tab-content" id="subTab4-tab1">
+								<div class="materials-chapter-profiles">
+									<h2 class="materials-chapter__title">Мы используем	немецкие профили</h2>
+									<div class="materials-chapter-profiles__row flex">
+										<div class="materials-chapter-profiles__mini-left">
+											<img src="img/materials/profiles/rexay.webp" alt="rexay">
+										</div>
+										<div class="materials-chapter-profiles__big-right --materials-chapter-text">
+											Они изготовлены из проверенного материала, не боятся испытания временем, отлично себя зарекомендовали в самых разных климатических условиях.<b>На все линейки</b> из профиля РЕХАУ распространяется <b>гарантия сроком на 5 лет.</b>
+										</div>
+									</div>
+									<div class="materials-chapter-profiles__row flex">
+										<div class="materials-chapter-profiles__left">
+											<img src="img/materials/profiles/GRAZIO-01.webp" alt="profiles">
+										</div>
+										<div class="materials-chapter-profiles__right">
+											<img src="img/materials/profiles/GRAZIO-02.webp" alt="profiles">
+										</div>
+									</div>
+									<div class="materials-chapter-profiles__brend-text --materials-chapter-text">
+										<img src="img/materials/profiles/GRAZIO.webp" alt="GRAZIO"> Окна кажутся лёгкими и утончёнными, этого эффекта удалось
+										добиться благодаря оригинальным скосам лицевых поверхностей главных
+										профилей. При этом за характерной «оболочкой» скрываются технологии,
+										применение которых позволило снизить теплопередачу профиля. Окна
+										ВЕНАЦ СВАЛЮ теплые и стильные, хорошо защищают от шума и сквозняка,
+										пропускают много света и удобны в эксплуатации.
+									</div>
+									<div class="materials-chapter-profiles__btn profile-click --btn" id="grazioClick">Подробнее<span></span></div>
+								</div>
+							</div>
+							<div class="sub-tab-content" id="subTab5-tab1">
+								<div class="materials-chapter-profiles">
+									<h2 class="materials-chapter__title">Мы используем	немецкие профили</h2>
+									<div class="materials-chapter-profiles__row flex">
+										<div class="materials-chapter-profiles__mini-left">
+											<img src="img/materials/profiles/rexay.webp" alt="rexay">
+										</div>
+										<div class="materials-chapter-profiles__big-right --materials-chapter-text">
+											Они изготовлены из проверенного материала, не боятся испытания временем, отлично себя зарекомендовали в самых разных климатических условиях.<b>На все линейки</b> из профиля РЕХАУ распространяется <b>гарантия сроком на 5 лет.</b>
+										</div>
+									</div>
+									<div class="materials-chapter-profiles__row flex">
+										<div class="materials-chapter-profiles__left">
+											<img src="img/materials/profiles/INTELIO-01.webp" alt="profiles">
+										</div>
+										<div class="materials-chapter-profiles__right">
+											<img src="img/materials/profiles/INTELIO-02.webp" alt="profiles">
+										</div>
+									</div>
+									<div class="materials-chapter-profiles__brend-text --materials-chapter-text">
+										<img src="img/materials/profiles/INTELIO.webp" alt="BLITZ">– данные профили предназначены для изготовления окон с
+										улучшенными тепло- и звукоизоляционными свойствами. Благодаря глубине
+										80 мм и 6-камерному строению эти профили обеспечивают оконным конструк-
+										циям теплосбережение, требующееся в северных регионах. В условиях сред-
+										ней полосы это значит, что холодными зимами вы сможете существенно эконо-
+										мить на отоплении, при этом даже в самый сильный мороз на оконных рамах
+										не будет выпадать конденсат из влажного комнатного воздуха.
+									</div>
+									<div class="materials-chapter-profiles__btn profile-click --btn" id="intelioClick">Подробнее<span></span></div>
+								</div>
+							</div>
+							<div class="products-page-popap materials-profiles-popap">
+								<div class="close-btn profile-close"></div>
+								<div class="profiles-popap-table">
+									<div class="profiles-popap-table__titles">
+										<div class="profiles-popap-table__item">Система</div>
+										<div class="profiles-popap-table__item">BLITZ</div>
+										<div class="profiles-popap-table__item">THERMO-Design</div>
+										<div class="profiles-popap-table__item">GRAZIO</div>
+										<div class="profiles-popap-table__item">DELIGHT-Design</div>
+										<div class="profiles-popap-table__item">INTELIO-80</div>
+									</div>
+									<div class="profiles-popap-table__content">
+										<div class="profiles-popap-table__items">
+											<div class="profiles-popap-table__item">Глубина, мм</div>
+											<div class="profiles-popap-table__item">60</div>
+											<div class="profiles-popap-table__item">60</div>
+											<div class="profiles-popap-table__item">70</div>
+											<div class="profiles-popap-table__item">70</div>
+											<div class="profiles-popap-table__item">80</div>
+										</div>
+										<div class="profiles-popap-table__items">
+											<div class="profiles-popap-table__item">Количество	камер</div>
+											<div class="profiles-popap-table__item">3</div>
+											<div class="profiles-popap-table__item">4</div>
+											<div class="profiles-popap-table__item">5</div>
+											<div class="profiles-popap-table__item">5</div>
+											<div class="profiles-popap-table__item">6</div>
+										</div>
+										<div class="profiles-popap-table__items">
+											<div class="profiles-popap-table__item">Нахлест	уплотнений, мм(снаружи/внутри)</div>
+											<div class="profiles-popap-table__item">6/8</div>
+											<div class="profiles-popap-table__item">8/8</div>
+											<div class="profiles-popap-table__item">5/8</div>
+											<div class="profiles-popap-table__item">7/8</div>
+											<div class="profiles-popap-table__item">6/8</div>
+										</div>
+										<div class="profiles-popap-table__items">
+											<div class="profiles-popap-table__item">Зазор притвора, мм</div>
+											<div class="profiles-popap-table__item">3,5±0,5</div>
+											<div class="profiles-popap-table__item">3,5±0,5</div>
+											<div class="profiles-popap-table__item">3,5±0,5</div>
+											<div class="profiles-popap-table__item">3,5±0,5</div>
+											<div class="profiles-popap-table__item">3,5±0,5</div>
+										</div>
+										<div class="profiles-popap-table__items">
+											<div class="profiles-popap-table__item">Коробка + створка (непрозрачная часть), мм</div>
+											<div class="profiles-popap-table__item">105</div>
+											<div class="profiles-popap-table__item">116</div>
+											<div class="profiles-popap-table__item">104</div>
+											<div class="profiles-popap-table__item">109-110</div>
+											<div class="profiles-popap-table__item">107-114</div>
+										</div>
+										<div class="profiles-popap-table__items">
+											<div class="profiles-popap-table__item">Диапазон толщин заполнений</div>
+											<div class="profiles-popap-table__item">от 4 до 32</div>
+											<div class="profiles-popap-table__item">от 4 до 32</div>
+											<div class="profiles-popap-table__item">от 10 до 40</div>
+											<div class="profiles-popap-table__item">от 10 до 40</div>
+											<div class="profiles-popap-table__item">от 20 до 50</div>
+										</div>
+										<div class="profiles-popap-table__items">
+											<div class="profiles-popap-table__item">Сопротивление	теплопередача м²° С/Вт</div>
+											<div class="profiles-popap-table__item">0,7</div>
+											<div class="profiles-popap-table__item">0,75</div>
+											<div class="profiles-popap-table__item">0,85</div>
+											<div class="profiles-popap-table__item">0,94</div>
+											<div class="profiles-popap-table__item">0,99</div>
+										</div>
+										<div class="profiles-popap-table__items">
+											<div class="profiles-popap-table__item">Водо- проницаемость по ГОСТ 23166-99</div>
+											<div class="profiles-popap-table__item">До класса А</div>
+											<div class="profiles-popap-table__item">До класса А</div>
+											<div class="profiles-popap-table__item">До класса А</div>
+											<div class="profiles-popap-table__item">До класса А</div>
+											<div class="profiles-popap-table__item">До класса А</div>
+										</div>
+										<div class="profiles-popap-table__items">
+											<div class="profiles-popap-table__item">Воздухо- проницаемость</div>
+											<div class="profiles-popap-table__item">До класса А</div>
+											<div class="profiles-popap-table__item">До класса А</div>
+											<div class="profiles-popap-table__item">До класса А</div>
+											<div class="profiles-popap-table__item">До класса А</div>
+											<div class="profiles-popap-table__item">До класса А</div>
+										</div>
+										<div class="profiles-popap-table__items">
+											<div class="profiles-popap-table__item">Звукоизоляция	по ГОСТ 26602.3-99</div>
+											<div class="profiles-popap-table__item">До класса Б</div>
+											<div class="profiles-popap-table__item">До класса Б</div>
+											<div class="profiles-popap-table__item">До класса Б</div>
+											<div class="profiles-popap-table__item">До класса Б</div>
+											<div class="profiles-popap-table__item">До класса А</div>
+										</div>
+										<div class="profiles-popap-table__items">
+											<div class="profiles-popap-table__item">Взломо безопасность по ГОСТ 31462-2011</div>
+											<div class="profiles-popap-table__item">ПВ 2</div>
+											<div class="profiles-popap-table__item">ПВ 2</div>
+											<div class="profiles-popap-table__item">ПВ 2</div>
+											<div class="profiles-popap-table__item">ПВ 2</div>
+											<div class="profiles-popap-table__item">ПВ 3</div>
+										</div>
+										<div class="profiles-popap-table__items">
+											<div class="profiles-popap-table__item">Долговечность</div>
+											<div class="profiles-popap-table__item">60 лет</div>
+											<div class="profiles-popap-table__item">60 лет</div>
+											<div class="profiles-popap-table__item">60 лет</div>
+											<div class="profiles-popap-table__item">60 лет</div>
+											<div class="profiles-popap-table__item">60 лет</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-page-item flex tab-content materials-alumin-chapter" id="tab2">
+							<ul class="products-page-item__list">
+								<li class="sub-tab" data-sub-tab="subTab1-tab2">krwd 45</li>
+								<li class="sub-tab" data-sub-tab="subTab2-tab2">krwd 64</li>
+								<li class="sub-tab" data-sub-tab="subTab3-tab2">krf 50</li>
+								<li class="sub-tab" data-sub-tab="subTab4-tab2">provedal</li>
+							</ul>
+							<div class="sub-tab-content" id="subTab1-tab2">
+								<div class="materials-chapter-profiles">
+									<h2 class="materials-chapter__title">Оконно-дверная серия <b>KRWD-45</b></h2>
+									<div class="materials-alumin-chapter__subtitle">Krauss</div>
+									<div class="--materials-chapter-text --wp-style-text">
+										<p>
+											Оконно-дверная серия профилей KRWD 45 входит в состав номенклатуры архитектурных строительных профилей системы "КRAUSS. Серия KRWD 45 предназначена для изготовления ограждающих конструкций наружной и внутренней архитектурной застройки зданий, к которым не предъявляются требования термоизоляции: различные виды оконных и дверных блоков, тамбуров, перегородок, витрин и витражных светопрозрачных конструкций, устанавливаемых в стеновые проемы зданий.
+										</p>
+										<p>
+											Основу серии составляют алюминиевые профили с толщиной рамных, импостных и дверных профилей 45 мм, оконных створочных профилей 53 мм.
+										</p>
+									</div>
+									<div class="materials-alumin-chapter__btn">
+										<div class="materials-chapter-profiles__btn --btn">Подробнее<span></span></div>
+									</div>
+									<div class="materials-chapter-profiles__row flex">
+										<div class="materials-chapter-profiles__left">
+											<img src="img/materials/aluminii/KRWD 45-01.webp" alt="profiles">
+										</div>
+										<div class="materials-chapter-profiles__right">
+											<img src="img/materials/aluminii/KRWD 45-02.webp" alt="profiles">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sub-tab-content" id="subTab2-tab2">
+								<div class="materials-chapter-profiles">
+									<h2 class="materials-chapter__title">Оконно-дверная серия <b>KRWD-64</b></h2>
+									<div class="materials-alumin-chapter__subtitle">Krauss</div>
+									<div class="--materials-chapter-text --wp-style-text">
+										<p>
+											Серия KRWD 64 предназначена для изготовления ограждающих конструкций	наружной архитектурной застройки зданий, к которым предъявляются требования термоизоляции: различные виды оконных и дверных блоков, тамбуров, витрин и витражных светопрозрачных конструкций, устанавливаемых в стеновые проемы зданий.
+										</p>
+										<p>
+											Основу серии составляют комбинированные профили, состоящие из двух алюминиевых профилей, соединенных между собой с помощью двух термовставок из армированного стекловолокном полиамида. Соединение термовставок с алюминиевыми профилями может производиться как до покраски комбинированного профиля, так и после покраски по отдельности составляющих его алюминиевых профилей. Толщина рамных, импостных и дверных профилей составляет 64 мм, оконных створочных профилей 72 мм.
+										</p>
+									</div>
+									<div class="materials-alumin-chapter__btn">
+										<div class="materials-chapter-profiles__btn --btn">Подробнее<span></span></div>
+									</div>
+									<div class="materials-chapter-profiles__row flex">
+										<div class="materials-chapter-profiles__left">
+											<img src="img/materials/aluminii/KRWD 64-01.webp" alt="profiles">
+										</div>
+										<div class="materials-chapter-profiles__right">
+											<img src="img/materials/aluminii/KRWD 64-02.webp" alt="profiles">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sub-tab-content" id="subTab3-tab2">
+								<div class="materials-chapter-profiles">
+									<h2 class="materials-chapter__title">Фасадная серия <b>KRWD-50</b></h2>
+									<div class="materials-alumin-chapter__subtitle">Krauss</div>
+									<div class="--materials-chapter-text --wp-style-text">
+										<p>
+											Фасадная серия KRF-50 имеет ширину лицевой поверхности профилей 50 мм. Высота сечения стоек от 47 до 227 мм, ригелей от 7 до 153 мм. Используемое заполнение толщиной от 4 до 48 мм. Фасадная серия KRF-50 позволяет изготавливать витражи с поворотом ригеля в горизонтальной плоскости на различные углы (внутренние, наружные) с применением одной стойки и двух стоек с использованием угловых адаптеров в соответствии со СНиП 2.03.06-85 “Алюминиевые конструкци
+										</p>
+										<p>
+											На основе фасадной серии KRF-50 изготовляются следующие конструкции:
+										</p>
+										<ul>
+											<li>стоечно-ригельная фасадная система;</li>
+											<li>ригель-ригельная фасадная система.</li>
+										</ul>
+									</div>
+									<div class="materials-alumin-chapter__btn">
+										<div class="materials-chapter-profiles__btn --btn">Подробнее<span></span></div>
+									</div>
+									<div class="materials-chapter-profiles__row flex">
+										<div class="materials-chapter-profiles__left">
+											<img src="img/materials/aluminii/KRF 50-01.webp" alt="profiles">
+										</div>
+										<div class="materials-chapter-profiles__right">
+											<img src="img/materials/aluminii/KRF 50-02.webp" alt="profiles">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sub-tab-content" id="subTab4-tab2">
+								<div class="materials-chapter-profiles">
+									<h2 class="materials-chapter__title">Алюминиевые архитектурные	профильные системы</h2>
+									<div class="materials-alumin-chapter__subtitle"><img src="img/materials/aluminii/provedal.webp" alt="provedal"></div>
+									<div class="--materials-chapter-text --wp-style-text">
+										<p>
+											Холодная серия профилей PROVEDAL С640 для изготовления конструкций с раздвижными створками (типа купе). Применяется при остеклении балконов, лоджий, террас, беседок, веранд, для создания внутренних перегородок в жилых и офисных интерьерах. Конструкция может состоять из 2,3,4,6 подвижных створок, быть двух или трехполозной. Подвижные створки могут так же чередоваться с глухими элементами
+										</p>
+									</div>
+									<div class="materials-chapter-profiles__row flex">
+										<div class="materials-chapter-profiles__left">
+											<img src="img/materials/aluminii/provedal-01.webp" alt="provedal">
+										</div>
+										<div class="materials-chapter-profiles__right">
+											<img src="img/materials/aluminii/provedal-02.webp" alt="provedal">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="materials-glass-tab products-page-item flex tab-content" id="tab3">
+							<div class="materials-glass-chapter">
+								<h3 class="materials-glass-chapter__title">Мы осуществляем производство стеклопакетов для наших конструкций под брендом	<b>BauGlass</b> на профессиональном оборудовании <b>LISEC (Австрия)</b></h3>
+								<div class="glass-chapter-accardion">
+									<div class="glass-chapter-accardion__item class-add">
+										<div class="glass-chapter-accardion__visible class-click">
+											<div class="glass-chapter-accardion__visible-text">Мультифункциональное стекло</div>
+											<span class="--arrow-block"></span>
+										</div>
+										<div class="glass-chapter-accardion__hidden">
+											<div class="glass-chapter-accardion__hidden-text">
+												Имеет металлическое напыление, которое призвано отражать от поверхности тепло внутрь помещения зимой, а летом — на улицу. Такие окна могут устанавливать как владельцы квартир, так и загородных домов. Особенно актуальны они будут в случае, если вы решили улучшить энергоэффективность вашего жилья
+											</div>
+										</div>
+									</div>
+									<div class="glass-chapter-accardion__item class-add">
+										<div class="glass-chapter-accardion__visible class-click">
+											<div class="glass-chapter-accardion__visible-text">Энергосберегающее стекло</div>
+											<span class="--arrow-block"></span>
+										</div>
+										<div class="glass-chapter-accardion__hidden">
+											<div class="glass-chapter-accardion__hidden-text">
+												Имеет металлическое напыление, которое призвано отражать от поверхности тепло внутрь помещения зимой, а летом — на улицу. Такие окна могут устанавливать как владельцы квартир, так и загородных домов. Особенно актуальны они будут в случае, если вы решили улучшить энергоэффективность вашего жилья
+											</div>
+										</div>
+									</div>
+									<div class="glass-chapter-accardion__item class-add">
+										<div class="glass-chapter-accardion__visible class-click">
+											<div class="glass-chapter-accardion__visible-text">Архитектурное стекло</div>
+											<span class="--arrow-block"></span>
+										</div>
+										<div class="glass-chapter-accardion__hidden">
+											<div class="glass-chapter-accardion__hidden-text">
+												Имеет металлическое напыление, которое призвано отражать от поверхности тепло внутрь помещения зимой, а летом — на улицу. Такие окна могут устанавливать как владельцы квартир, так и загородных домов. Особенно актуальны они будут в случае, если вы решили улучшить энергоэффективность вашего жилья
+											</div>
+										</div>
+									</div>
+									<div class="glass-chapter-accardion__item class-add">
+										<div class="glass-chapter-accardion__visible class-click">
+											<div class="glass-chapter-accardion__visible-text">Матовые стекла</div>
+											<span class="--arrow-block"></span>
+										</div>
+										<div class="glass-chapter-accardion__hidden">
+											<div class="glass-chapter-accardion__hidden-text">
+												Имеет металлическое напыление, которое призвано отражать от поверхности тепло внутрь помещения зимой, а летом — на улицу. Такие окна могут устанавливать как владельцы квартир, так и загородных домов. Особенно актуальны они будут в случае, если вы решили улучшить энергоэффективность вашего жилья
+											</div>
+										</div>
+									</div>
+									<div class="glass-chapter-accardion__item class-add">
+										<div class="glass-chapter-accardion__visible class-click">
+											<div class="glass-chapter-accardion__visible-text">Триплекс</div>
+											<span class="--arrow-block"></span>
+										</div>
+										<div class="glass-chapter-accardion__hidden">
+											<div class="glass-chapter-accardion__hidden-text">
+												Имеет металлическое напыление, которое призвано отражать от поверхности тепло внутрь помещения зимой, а летом — на улицу. Такие окна могут устанавливать как владельцы квартир, так и загородных домов. Особенно актуальны они будут в случае, если вы решили улучшить энергоэффективность вашего жилья
+											</div>
+										</div>
+									</div>
+									<div class="glass-chapter-accardion__item class-add">
+										<div class="glass-chapter-accardion__visible class-click">
+											<div class="glass-chapter-accardion__visible-text">Армированное стекло</div>
+											<span class="--arrow-block"></span>
+										</div>
+										<div class="glass-chapter-accardion__hidden">
+											<div class="glass-chapter-accardion__hidden-text">
+												Имеет металлическое напыление, которое призвано отражать от поверхности тепло внутрь помещения зимой, а летом — на улицу. Такие окна могут устанавливать как владельцы квартир, так и загородных домов. Особенно актуальны они будут в случае, если вы решили улучшить энергоэффективность вашего жилья
+											</div>
+										</div>
+									</div>
+									<div class="glass-chapter-accardion__item class-add">
+										<div class="glass-chapter-accardion__visible class-click">
+											<div class="glass-chapter-accardion__visible-text">Каленое стекло</div>
+											<span class="--arrow-block"></span>
+										</div>
+										<div class="glass-chapter-accardion__hidden">
+											<div class="glass-chapter-accardion__hidden-text">
+												Имеет металлическое напыление, которое призвано отражать от поверхности тепло внутрь помещения зимой, а летом — на улицу. Такие окна могут устанавливать как владельцы квартир, так и загородных домов. Особенно актуальны они будут в случае, если вы решили улучшить энергоэффективность вашего жилья
+											</div>
+										</div>
+									</div>
+									<div class="glass-chapter-accardion__item class-add">
+										<div class="glass-chapter-accardion__visible class-click">
+											<div class="glass-chapter-accardion__visible-text">Тонирование пленкой</div>
+											<span class="--arrow-block"></span>
+										</div>
+										<div class="glass-chapter-accardion__hidden">
+											<div class="glass-chapter-accardion__hidden-text">
+												Имеет металлическое напыление, которое призвано отражать от поверхности тепло внутрь помещения зимой, а летом — на улицу. Такие окна могут устанавливать как владельцы квартир, так и загородных домов. Особенно актуальны они будут в случае, если вы решили улучшить энергоэффективность вашего жилья
+											</div>
+										</div>
+									</div>
+									<div class="glass-chapter-accardion__item class-add">
+										<div class="glass-chapter-accardion__visible class-click">
+											<div class="glass-chapter-accardion__visible-text">Бронирование</div>
+											<span class="--arrow-block"></span>
+										</div>
+										<div class="glass-chapter-accardion__hidden">
+											<div class="glass-chapter-accardion__hidden-text">
+												Имеет металлическое напыление, которое призвано отражать от поверхности тепло внутрь помещения зимой, а летом — на улицу. Такие окна могут устанавливать как владельцы квартир, так и загородных домов. Особенно актуальны они будут в случае, если вы решили улучшить энергоэффективность вашего жилья
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="materials-glass-tab products-page-item flex tab-content" id="tab4">
+							<div class="materials-sertificat-chapter">
+								<h2 class="materials-chapter__title">Мы сертифицированный производитель</h2>
+								<div class="materials-chapter-profiles__row flex">
+									<div class="materials-chapter-profiles__left">
+										<img src="img/materials/rexay.svg" alt="rexay">
+									</div>
+									<div class="materials-chapter-profiles__right">
+										<img src="img/materials/sertificat/01.webp" alt="sertificat">
+									</div>
+								</div>
+								<div class="materials-sertificat-chapter__accardion">
+									<div class="materials-sertificat-chapter__item">
+										<div class="materials-sertificat-chapter__visible flex">
+											<div class="materials-sertificat-chapter__visible-left">Профиль</div>
+											<div class="sertificat-visible-item flex-wrap class-add">
+												<div class="sertificat-visible-item__visible class-click">
+													<div class="sertificat-visible-item__left">
+														сертификат соответствия
+													</div>
+													<div class="sertificat-visible-item__right">
+														<div class="sertificat-visible-item__number">
+															<span class="number-sertificate">№</span>
+															<span class="text-sertificate">РОСС.DE.HX37.H02669</span> 
+														</div>
+														<span class="--arrow-block"></span>
+													</div>
+												</div>
+												<div class="materials-sertificat-chapter__hidden">
+													<div class="materials-sertificat-chapter__row flex">
+														<div class="materials-sertificat-chapter__image">
+															<img src="img/materials/sertificat/02.webp" alt="sertificat">
+														</div>
+														<div class="materials-sertificat-chapter__image">
+															<img src="img/materials/sertificat/03.webp" alt="sertificat">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="materials-sertificat-chapter__item">
+										<div class="materials-sertificat-chapter__visible flex">
+											<div class="materials-sertificat-chapter__visible-left">Стеклопакеты</div>
+											<div class="sertificat-visible-item flex-wrap class-add">
+												<div class="sertificat-visible-item__visible class-click">
+													<div class="sertificat-visible-item__left">
+														декларации о соответствии
+													</div>
+													<div class="sertificat-visible-item__right">
+														<div class="sertificat-visible-item__number">
+															<span class="number-sertificate">№</span>
+															<span class="text-sertificate">
+																<span>РОСС.DE.HX37.H02669</span>
+															</span> 
+														</div>
+														<span class="--arrow-block"></span>
+													</div>
+												</div>
+												<div class="materials-sertificat-chapter__hidden">
+													<div class="materials-sertificat-chapter__row flex">
+														<div class="materials-sertificat-chapter__image">
+															<img src="img/materials/sertificat/02.webp" alt="sertificat">
+														</div>
+														<div class="materials-sertificat-chapter__image">
+															<img src="img/materials/sertificat/03.webp" alt="sertificat">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="materials-sertificat-chapter__item">
+										<div class="materials-sertificat-chapter__visible flex">
+											<div class="materials-sertificat-chapter__visible-left">Фурнитура</div>
+											<div class="sertificat-visible-item flex-wrap class-add">
+												<div class="sertificat-visible-item__visible class-click">
+													<div class="sertificat-visible-item__left">
+														сертификат соответствия
+													</div>
+													<div class="sertificat-visible-item__right">
+														<div class="sertificat-visible-item__number">
+															<span class="number-sertificate">№</span>
+															<span class="text-sertificate">
+																<span>№ РОСС RU.АЖ51.Н00371</span>
+																<span>№ РОСС RU.АЖ51.Н00372</span>
+															</span>
+														</div>
+														<span class="--arrow-block"></span>
+													</div>
+												</div>
+												<div class="materials-sertificat-chapter__hidden">
+													<div class="materials-sertificat-chapter__row flex">
+														<div class="materials-sertificat-chapter__image">
+															<img src="img/materials/sertificat/02.webp" alt="sertificat">
+														</div>
+														<div class="materials-sertificat-chapter__image">
+															<img src="img/materials/sertificat/03.webp" alt="sertificat">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-page-item flex tab-content furnitura-chapter" id="tab5">
+							<ul class="products-page-item__list">
+								<li class="sub-tab" data-sub-tab="subTab1-tab5">FAVORIT Classic</li>
+								<li class="sub-tab" data-sub-tab="subTab2-tab5">TITAN AF</li>
+							</ul>
+							<div class="sub-tab-content" id="subTab1-tab5">
+								<div class="materials-furnitura-chapter materials-chapter-profiles">
+									<h2 class="materials-chapter__title">Мы используем	фурнитуру</h2>
+									<div class="materials-furnitura-chapter__subtitle"><img src="img/materials/furnitura/siegenia.svg" alt="siegenia"></div>
+									<div class="--materials-chapter-text --wp-style-text">
+										<p>
+											Система фурнитуры <b>FAVORIT</b> отличается модульным построением и высокой внутренней совместимостью систем
+										</p>
+										<ul style="margin: 0px 0px 0px 30px;">
+											<li>фурнитура класса «А», имеет международный сертификат качества;</li>
+											<li>антикоррозийное покрытие фурнитуры;</li>
+											<li>многоступенчатое проветривание;</li>
+											<li>высокая коррозионная стойкость, экологически безопасная</li>
+										</ul>
+									</div>
+									<div class="materials-chapter-profiles__row flex">
+										<div class="materials-chapter-profiles__big-right --materials-chapter-text">
+											<img src="img/materials/furnitura/window.webp" alt="windows">
+										</div>
+										<div class="materials-chapter-profiles__mini-left">
+											<img src="img/materials/furnitura/01.svg" alt="window">
+											<img src="img/materials/furnitura/02.svg" alt="window">
+											<img src="img/materials/furnitura/03.svg" alt="window">
+										</div>
+									</div>
+									<div class="materials-alumin-chapter__btn">
+										<div class="materials-chapter-profiles__btn --btn">Подробнее<span></span></div>
+									</div>
+								</div>
+							</div>
+							<div class="sub-tab-content" id="subTab2-tab5">
+								<div class="materials-furnitura-chapter materials-chapter-profiles">
+									<h2 class="materials-chapter__title">Мы используем	фурнитуру</h2>
+									<div class="materials-furnitura-chapter__subtitle"><img src="img/materials/furnitura/siegenia.svg" alt="siegenia"></div>
+									<div class="--materials-chapter-text --wp-style-text">
+										<p>
+											Фурнитура <b>TITAN AF</b> реализует именно то, чего ждут от современного окна:
+										</p>
+										<ul style="margin: 0px 0px 0px 30px;">
+											<li>мягкий ход ручки в сочетании с плотным прижимом, независимо от количества точек запирания;</li>
+											<li>разнообразие вариантов порядка управления;</li>
+											<li>серьёзная противовзломная защита;</li>
+											<li>большой выбор дополнительных видов проветривания,
+												в том числе уникальное проветривание «зима-лето»
+												с энергосберегающим механизмом;</li>
+											<li>роликовый приподниматель компенсирует провисание створки до 4 мм.</li>
+										</ul>
+									</div>
+									<div class="materials-chapter-profiles__row flex">
+										<div class="materials-chapter-profiles__big-right --materials-chapter-text">
+											<img src="img/materials/furnitura/window.webp" alt="windows">
+										</div>
+										<div class="materials-chapter-profiles__mini-left">
+											<img src="img/materials/furnitura/01.svg" alt="window">
+											<img src="img/materials/furnitura/04.svg" alt="window">
+											<img src="img/materials/furnitura/05.svg" alt="window">
+											<img src="img/materials/furnitura/06.svg" alt="window">
+										</div>
+									</div>
+									<div class="materials-alumin-chapter__btn">
+										<div class="materials-chapter-profiles__btn --btn">Подробнее<span></span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-page-item flex tab-content aksessuar-chapter" id="tab6">
+							<ul class="products-page-item__list">
+								<li class="sub-tab" data-sub-tab="subTab1-tab6">НАЩЕЛЬНИК</li>
+								<li class="sub-tab" data-sub-tab="subTab2-tab6">ПОДОКОННИКИ</li>
+								<li class="sub-tab" data-sub-tab="subTab3-tab6">ОТЛИВЫ</li>
+								<li class="sub-tab" data-sub-tab="subTab4-tab6">ОТКОСЫ</li>
+								<li class="sub-tab" data-sub-tab="subTab5-tab6">ГЕРМЕТИК</li>
+								<li class="sub-tab" data-sub-tab="subTab6-tab6">ПСУЛ</li>
+								<li class="sub-tab" data-sub-tab="subTab7-tab6">ПЕНА</li>
+							</ul>
+							<div class="sub-tab-content" id="subTab1-tab6">
+							</div>
+							<div class="sub-tab-content" id="subTab2-tab6">
+							</div>
+							<div class="sub-tab-content" id="subTab3-tab6">
+							</div>
+							<div class="sub-tab-content" id="subTab4-tab6">
+							</div>
+							<div class="sub-tab-content" id="subTab5-tab6">
+							</div>
+							<div class="sub-tab-content" id="subTab6-tab6">
+							</div>
+							<div class="sub-tab-content" id="subTab7-tab6">
+							</div>
+						</div>
+						<div class="products-page-item flex tab-content aksessuar-chapter" id="tab7">
+							<ul class="products-page-item__list">
+								<li class="sub-tab" data-sub-tab="subTab1-tab7">МОСКИТНАЯ СЕТКА</li>
+								<li class="sub-tab" data-sub-tab="subTab2-tab7">РУЧКИ</li>
+								<li class="sub-tab" data-sub-tab="subTab3-tab7">ПОДСТАВОЧНЫЙ ПРОФИЛЬ</li>
+								<li class="sub-tab" data-sub-tab="subTab4-tab7">СТУПЕНЧАТОЕ	ПРОВЕТРИВАНИЕ</li>
+								<li class="sub-tab" data-sub-tab="subTab5-tab7">УПЛОТНИТЕЛЬ</li>
+								<li class="sub-tab" data-sub-tab="subTab6-tab7">ДЕТСКИЙ ЗАМОК</li>
+								<li class="sub-tab" data-sub-tab="subTab7-tab7">ЗАГЛУШКА ПАЗА ШТАПИКА</li>
+							</ul>
+							<div class="sub-tab-content" id="subTab1-tab7">
+							</div>
+							<div class="sub-tab-content" id="subTab2-tab7">
+							</div>
+							<div class="sub-tab-content" id="subTab3-tab7">
+							</div>
+							<div class="sub-tab-content" id="subTab4-tab7">
+							</div>
+							<div class="sub-tab-content" id="subTab5-tab7">
+							</div>
+							<div class="sub-tab-content" id="subTab6-tab7">
+							</div>
+							<div class="sub-tab-content" id="subTab7-tab7">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer class="footer">
+	<div class="container">
+		<div class="footer__row">
+			<div class="footer__item">
+				<h3 class="footer__item-title">
+					Навигация
+				</h3>
+				<div class="footer__item-select">
+					<div class="footer-city-default">Город: <span class="footer__city-select">Ижевск</span></div>
+					  <ul class="footer__city-list">
+						<li><a href="#">Ижевск</a></li>
+						<li><a href="#">Самара</a></li>
+						<li><a href="#">Екатеринбург</a></li>
+						<li><a href="#">Нижний Новгород</a></li>
+						<li><a href="#">Набережные челны</a></li>
+						<li><a href="#">Самара</a></li>
+						<li><a href="#">Самара</a></li>
+					  </ul> 
+				 </div>
+				<ul class="footer__item-list">
+					<li><a href="#">Дилерская сеть</a></li>
+					<li><a href="#">Продукция</a></li>
+					<li><a href="#">О заводе</a></li>
+					<li><a href="#">Статьи</a></li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<h3 class="footer__item-title">
+					Компания
+				</h3>
+				<ul class="footer__item-list">
+					<li><a href="#">Дилерам и строителям</a></li>
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Сертификаты</a></li>
+					<li><a href="#">Офисы продаж</a></li>
+					<li><a href="#">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<h3 class="footer__item-title">
+					Контакты
+				</h3>
+				<ul class="footer__item-list footer__item-social">
+					<li><a href="tel:88001003197">Номер горячей линии<br> 8 800 100 31 97</a></li>
+					<li><a href="#">Telegram</a></li>
+					<li><a href="#">Вконтакте</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<div class="footer-bottom">
+	<div class="container">
+		<ul class="footer-bottom__row flex">
+			<ul class="footer-bottom__list flex">
+				<li><a href="#">Варианты оплаты</a></li>
+				<li><a href="#">Инструкции по эксплуатации</a></li>
+				<li><a href="#">Полезные советы</a></li>
+			</ul>
+			<ul class="footer-bottom__social flex">
+				<li><a href="#"><img src="img/icons/footer/01.svg" alt="social"></a></li>
+				<li><a href="#"><img src="img/icons/footer/02.svg" alt="social"></a></li>
+				<li><a href="#"><img src="img/icons/footer/03.svg" alt="social"></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-bottom__bottom-center">© «FAVORIT» Ижевск 2023 г.</div>
+</footer>
+
+
+</div>
+	<script src="js/swiper-bundle.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+	<script>
+	function tabsProducts() {
+	const mainTabs = document.querySelectorAll('.products-page-content__main-tab-link');
+	const subTabs = document.querySelectorAll('.sub-tab');
+ 
+	mainTabs.forEach(function(mainTab) {
+	  mainTab.addEventListener('click', function() {
+		 const mainTabId = this.getAttribute('data-tab');
+		 changeMainTab(mainTabId);
+	  });
+	});
+ 
+	subTabs.forEach(function(subTab) {
+	  subTab.addEventListener('click', function() {
+		 const subTabId = this.getAttribute('data-sub-tab');
+		 changeSubTab(subTabId);
+	  });
+	});
+ 
+	// Открываем первый data-sub-tab для каждого data-tab по умолчанию
+	mainTabs.forEach(function(mainTab) {
+	  const mainTabId = mainTab.getAttribute('data-tab');
+	  const firstSubTab = document.querySelector('.sub-tab[data-sub-tab^="subTab1-' + mainTabId + '"]');
+	  const defaultSubTab = firstSubTab ? firstSubTab.getAttribute('data-sub-tab') : null;
+ 
+	  if (defaultSubTab) {
+		 changeSubTab(defaultSubTab);
+	  }
+	});
+ 
+	// Открываем первый data-sub-tab для первого data-tab по умолчанию
+	const firstMainTab = mainTabs[0].getAttribute('data-tab');
+	const firstSubTab = document.querySelector('.sub-tab[data-sub-tab^="subTab1-"]');
+	const defaultSubTab = firstSubTab ? firstSubTab.getAttribute('data-sub-tab') : null;
+ 
+	changeMainTab(firstMainTab);
+	if (defaultSubTab) {
+	  changeSubTab(defaultSubTab);
+	}
+ 
+	function changeMainTab(mainTabId) {
+	  const mainTabContents = document.querySelectorAll('.products-page-item');
+ 
+	  mainTabContents.forEach(function(content) {
+		 content.style.display = 'none';
+	  });
+ 
+	  mainTabs.forEach(function(tab) {
+		 tab.classList.remove('active');
+	  });
+ 
+	  document.getElementById(mainTabId).style.display = 'flex';
+	  document.querySelector('.products-page-content__main-tab-link[data-tab="' + mainTabId + '"]').classList.add('active');
+ 
+	  // Открываем первый data-sub-tab для выбранного data-tab
+	  const firstSubTab = document.querySelector('.sub-tab[data-sub-tab^="subTab1-' + mainTabId + '"]');
+	  const defaultSubTab = firstSubTab ? firstSubTab.getAttribute('data-sub-tab') : null;
+ 
+	  if (defaultSubTab) {
+		 changeSubTab(defaultSubTab);
+	  }
+	}
+ 
+	function changeSubTab(subTabId) {
+	  const subTabContents = document.querySelectorAll('.sub-tab-content');
+ 
+	  subTabContents.forEach(function(content) {
+		 content.style.display = 'none';
+	  });
+ 
+	  subTabs.forEach(function(tab) {
+		 tab.classList.remove('active');
+	  });
+ 
+	  document.getElementById(subTabId).style.display = 'flex';
+	  document.querySelector('.sub-tab[data-sub-tab="' + subTabId + '"]').classList.add('active');
+	}
+	
+}
+tabsProducts();
+
+</script>
+</body>
+
+</html>

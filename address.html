@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Gulp pack for easy html/php markup development">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<link rel="stylesheet"
+				href="css/swiper-bundle.min.css">
+	<title>Easy-webdev-startpack v3.0</title>
+</head>
+
+
+<body>
+<div class="wrapper">
+	<header class="header">
+	<div class="offcanvas-menu-overlay"></div>
+	<div class="top-header">
+		<div class="offcanvas-top-header"></div>
+		<div class="container flex">
+			<div class="top-header__city">
+				<div class="top-header__main-city class-click">
+					<span class="header-city --text-mini"><img src="img/icons/header/location.svg" alt="location"> Сарапул</span>
+				</div>
+				<div class="top-header__list-cities class-add">
+	<h3 class="top-header__list-title">Ваш город</h3>
+	<div class="close-btn class-close"></div>
+	<div class="top-header__cities-search">
+		<input type="text" id="searchInput" placeholder="Не нашли город? Воспользуйтесь поиском">
+	</div>
+	<ul class="top-header__city-cities flex-wrap" id="cityList">
+		<li><a href="#">Самара</a></li>
+		<li><a href="#">Ижевск</a></li>
+		<li><a href="#">Екатеринбург</a></li>
+		<li><a href="#">Нижний Новгород</a></li>
+		<li><a href="#">Набережные челны</a></li>
+		<li><a href="#">Самара</a></li>
+		<li><a href="#">Самара</a></li>
+		<li><a href="#">Самара</a></li>
+		<li><a href="#">Ижевск</a></li>
+		<li><a href="#">Екатеринбург</a></li>
+		<li><a href="#">Нижний Новгород</a></li>
+		<li><a href="#">Набережные челны</a></li>
+		<li><a href="#">Самара</a></li>
+		<li><a href="#">Самара</a></li>
+	</ul>
+</div>
+
+			</div>
+			<!-- <nav class="top-header__menu">
+				<ul class="top-header__list flex --text-middle">
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Сертификаты</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav> -->
+			<div class="top-header__social flex-wrap">
+				<div class="top-header__social-img"><a href="#"><img src="img/icons/header/vk.svg" alt="location"></a></div>
+				<div class="top-header__social-img"><a href="#"><img src="img/icons/header/telega.svg" alt="location"></a></div>
+				<div class="top-header__cabinet --text-middle"><a href="#">Личный кабинет</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="middle-header flex">
+			<div class="middle-header__left flex">
+				<a href="/" class="middle-header__logo"><img src="img/logo/logo.svg" alt="logo"></a>
+				<span class="middle-header__border"></span>
+				<a href="/" class="middle-header__rehau"><img src="img/logo/logo-rexay.svg" alt="rexay"></a>
+			</div>
+			<div class="middle-header__right flex">
+				<a href="tel:8(800)1003197" class="middle-header__phone">8 (800) 100 31 97</a>
+				<div class="header-burger"><span></span></div>
+				<div class="middle-header__back-call --btn">Заказать звонок</div>
+			</div>
+		</div>
+		<nav class="header-menu">
+			<ul class="header-menu__list flex-wrap --text-mini">
+				<li><a href="/products.html">Продукция</a>
+					<ul class="sub-menu products-header">
+						<li><a href="/products.html#tab1">Окна ПВХ</a>
+							<ul class="sub-menu">
+								<li><a href="/products.html#subTab1-tab1">BLITZ</a></li>
+								<li><a href="/products.html#subTab2-tab1">CONSTANTA</a></li>
+								<li><a href="/products.html#subTab3-tab1">GRAZIO</a></li>
+								<li><a href="/products.html#subTab4-tab1">DELIGHT</a></li>
+								<li><a href="/products.html#subTab5-tab1">INTELIO</a></li>
+							</ul>
+						</li>
+						<li><a href="/products.html#tab2">Двери ПВХ</a>
+							<ul class="sub-menu">
+								<li><a href="#">С АЛЮМИНИЕВЫМ ПОРОГОМ</a></li>
+								<li><a href="#">С ПВХ ПОРОГОМ</a></li>
+							</ul>
+						</li>
+						<li><a href="/products.html#tab3">Алюминиевые конструкции</a>
+							<ul class="sub-menu">
+								<li><a href="#">KRAUSS</a></li>
+								<li><a href="#">PROVEDAL</a></li>
+							</ul>
+						</li>
+						<li><a href="/products.html#tab4">Портальные системы</a>
+							<ul class="sub-menu">
+								<li><a href="#">ПОРТАЛЫ</a></li>
+							</ul>
+						</li>
+						<li><a href="/products.html#tab5">Нестандартные решения</a>
+							<ul class="sub-menu">
+								<li><a href="#">ФОРМЫ ОКНА</a></li>
+							</ul>
+						</li>
+						<li><a href="/products.html#tab6">Декорирование окна</a>
+							<ul class="sub-menu">
+								<li><a href="#">ТОНИРОВАНИЕ</a></li>
+								<li><a href="#">ПОКРАСКА</a></li>
+								<li><a href="#">ЛАМИНИРОВАНИЕ</a></li>
+								<li><a href="#">ДЕКОРАТИВНАЯ РАСКЛАДКА</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="/materials.html">Материалы</a>
+					<ul class="sub-menu">
+						<li><a href="#">Профили</a>
+							<ul class="sub-menu">
+								<li><a href="#">BLITZ</a></li>
+								<li><a href="#">CONSTANTA</a></li>
+								<li><a href="#">DELIGHT</a></li>
+								<li><a href="#">GRAZIO</a></li>
+								<li><a href="#">INTELIO</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Алюминий</a>
+							<ul class="sub-menu">
+								<li><a href="#">KRWD 45</a></li>
+								<li><a href="#">KRWD 64</a></li>
+								<li><a href="#">KRF 50</a></li>
+								<li><a href="#">PROVEDAL</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Стекла</a></li>
+						<li><a href="#">Сертификаты</a></li>
+						<li><a href="#">Фурнитура</a>
+							<ul class="sub-menu">
+								<li><a href="#">FAVORIT CLASSIC</a></li>
+								<li><a href="#">TITAN AF</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Аксессуары</a>
+							<ul class="sub-menu">
+								<li><a href="#">НАЩЕЛЬНИК</a></li>
+								<li><a href="#">ПОДОКОННИКИ</a></li>
+								<li><a href="#">ОТЛИВЫ</a></li>
+								<li><a href="#">ОТКОСЫ</a></li>
+								<li><a href="#">ГЕРМЕТИК</a></li>
+								<li><a href="#">ПСУЛ</a></li>
+								<li><a href="#">ПЕНА</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Комплектующие</a>
+							<ul class="sub-menu">
+								<li><a href="#">МОСКИТНАЯ СЕТКА</a></li>
+								<li><a href="#">РУЧКИ</a></li>
+								<li><a href="#">ПОДСТАВОЧНЫЙ ПРОФИЛЬ</a></li>
+								<li><a href="#">СТУПЕНЧАТОЕ ПРОВЕТРИВАНИЕ</a></li>
+								<li><a href="#">УПЛОТНИТЕЛЬ</a></li>
+								<li><a href="#">ДЕТСКИЙ ЗАМОК</a></li>
+								<li><a href="#">ЗАГЛУШКА ПАЗА ШТАПИКА</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="/dealer.html">Дилерам</a></li>
+				<li><a href="#">Адреса</a></li>
+				<li><a href="/factory.html">О заводе</a></li>
+			</ul>
+			<a href="tel:8(800)1003197" class="middle-header__phone">8 (800) 100 31 97</a>
+		</nav>
+	</div>
+</header>
+
+	<div class="content">
+
+		<section class="address-page">
+			<!-- <iframe id="map_359116648" frameborder="0" width="100%" height="600px" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe><script type="text/javascript">(function(e,t){var r=document.getElementById(e);r.contentWindow.document.open(),r.contentWindow.document.write(atob(t)),r.contentWindow.document.close()})("map_359116648", "PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiIzAyODFmMiIsInRpdGxlIjoiIiwiZGVzY3JpcHRpb24iOiIiLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6WzUzLjIxODQ4MSw1Ni44NjY0NjldfSwiaWQiOjQ4N31dLCJtYXBQb3NpdGlvbiI6eyJsYXQiOjU2Ljg2Nzc4ODkzNjkwMzc4NiwibG9uIjo1My4yMjQ4NTc0OTUyNjE4OSwiem9vbSI6MTV9LCJpc1doZWVsWm9vbUVuYWJsZWQiOnRydWV9Jyk8L3NjcmlwdD48c2NyaXB0IGFzeW5jPSIiIHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbS9ndGFnL2pzP2lkPVVBLTE1ODg2NjE2OC0xIj48L3NjcmlwdD48c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+KGZ1bmN0aW9uKGUpe2Z1bmN0aW9uIHQoKXtkYXRhTGF5ZXIucHVzaChhcmd1bWVudHMpfXdpbmRvdy5kYXRhTGF5ZXI9d2luZG93LmRhdGFMYXllcnx8W10sdCgianMiLG5ldyBEYXRlKSx0KCJjb25maWciLGUpLHdpbmRvdy5ndGFnPXR9KSgnVUEtMTU4ODY2MTY4LTEnKTwvc2NyaXB0PjwvYm9keT4=")</script> -->
+				<div class="address-page-info">
+					<h1 class="address-page-info__title --title">Офисы продаж</h1>
+					<div class="address-page-info__row">
+						<img src="img/address/location.svg" alt="image">
+						<h3 class="address-page-info__right-title">УР, Ижевск, ул. Коммунаров 222, за ТЦ «ФЛАГМАН»</h3>
+						<div class="address-page-info__right-schedule">
+							Пн - Пт: с 9:00 до 19:00<br>
+							Сб: с 10:00 до 14:00<br>
+							Вс: выходной <br>
+							<a href="tel:8919759-45-25">Тел.: +7 (919) 759-45-25 </a>
+						</div>
+					</div>
+					<div class="address-page-info__row">
+						<img src="img/address/doors.svg" alt="image">
+						<h3 class="address-page-info__right-title">ШОУ-РУМ</h3>
+					</div>
+					<div class="address-page-info__btn --btn">Заказать звонок</div>
+					<div class="address-page-info__phone">
+						<a href="tel:88001003197"><img src="img/address/phone.svg" alt="phone"></a>
+					</div>
+					<div class="address-page-info__bottom flex">
+						<a href="#"><img src="img/address/vk.svg" alt="vk"></a>
+						<a href="#"><img src="img/address/telega.svg" alt="telega"></a>
+					</div>
+				</div>
+				<div class="address-page__map">
+					<a class="address-page__map-link" href="http://2gis.ru/izhevsk/firm/70000001038645661/center/53.220080137252815,56.86751310085716/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"></a><div class="dg-widget-link"><a href="http://2gis.ru/izhevsk/center/53.219328,56.866715/zoom/16/routeTab/rsType/bus/to/53.219328,56.866715╎Фаворит, торговая компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route"></a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":600, "height":600,"borderColor":"#a3a3a3","pos":{"lat":56.86751310085716,"lon":53.220080137252815,"zoom":16},"opt":{"city":"izhevsk"},"org":[{"id":"70000001038645661"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;"></noscript>
+				</div>
+			
+		</section>
+
+		<section class="order-windows --padding-block">
+			<div class="container">
+				<div class="order-windows-content class-add flex">
+					<div class="order-windows-content__left">
+						<div class="order-windows-content__left-top">
+							<h2 class="order-windows-content__title">Закажи окна</h2>
+							<div class="order-windows-content__subtitle">Получи скидки на первый заказ</div>
+						</div>
+						<div class="order-windows-content__left-btn class-click --btn">Оставить заявку</div>
+					</div>
+					<div class="order-windows-content__center">
+						<div class="order-windows-content__form">
+							<div class="close-btn class-close"></div>
+							<div class="order-windows-content__form-content">
+								<div class="order-windows-content__form-input"><input type="text" placeholder="Ваше имя"></div>
+								<div class="order-windows-content__form-input"><input type="text" placeholder="Телефон*"></div>
+								<div class="order-windows-content__form-input"><input type="text" placeholder="Город*"></div>
+								<div class="order-windows-content__form-input selected-form-order-windows">
+									<div class="footer__item-select">
+										<div class="footer-city-default"><span class="order-windows__city-select">Выбрать</span></div>
+										 <ul class="footer__city-list">
+											<li>Дилер</li>
+											<li>Cтроитель</li>
+											<li>Физ.лицо</li>
+										 </ul> 
+									 </div>
+								</div>
+								<div class="order-windows-content__form-checked"><input type="checkbox"> Я согласен(-а) на обработку и передачу персональных данных</div>
+								<div class="order-windows-content__form-btn"><button type="submit" class="--btn">Оставить заявку</button></div>
+							</div>
+						</div>
+					</div>
+					<div class="order-windows-content__right">
+						<img src="img/video/pman.webp" alt="men">
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer class="footer">
+	<div class="container">
+		<div class="footer__row">
+			<div class="footer__item">
+				<h3 class="footer__item-title">
+					Навигация
+				</h3>
+				<div class="footer__item-select">
+					<div class="footer-city-default">Город: <span class="footer__city-select">Ижевск</span></div>
+					  <ul class="footer__city-list">
+						<li><a href="#">Ижевск</a></li>
+						<li><a href="#">Самара</a></li>
+						<li><a href="#">Екатеринбург</a></li>
+						<li><a href="#">Нижний Новгород</a></li>
+						<li><a href="#">Набережные челны</a></li>
+						<li><a href="#">Самара</a></li>
+						<li><a href="#">Самара</a></li>
+					  </ul> 
+				 </div>
+				<ul class="footer__item-list">
+					<li><a href="#">Дилерская сеть</a></li>
+					<li><a href="#">Продукция</a></li>
+					<li><a href="#">О заводе</a></li>
+					<li><a href="#">Статьи</a></li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<h3 class="footer__item-title">
+					Компания
+				</h3>
+				<ul class="footer__item-list">
+					<li><a href="#">Дилерам и строителям</a></li>
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Сертификаты</a></li>
+					<li><a href="#">Офисы продаж</a></li>
+					<li><a href="#">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<h3 class="footer__item-title">
+					Контакты
+				</h3>
+				<ul class="footer__item-list footer__item-social">
+					<li><a href="tel:88001003197">Номер горячей линии<br> 8 800 100 31 97</a></li>
+					<li><a href="#">Telegram</a></li>
+					<li><a href="#">Вконтакте</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<div class="footer-bottom">
+	<div class="container">
+		<ul class="footer-bottom__row flex">
+			<ul class="footer-bottom__list flex">
+				<li><a href="#">Варианты оплаты</a></li>
+				<li><a href="#">Инструкции по эксплуатации</a></li>
+				<li><a href="#">Полезные советы</a></li>
+			</ul>
+			<ul class="footer-bottom__social flex">
+				<li><a href="#"><img src="img/icons/footer/01.svg" alt="social"></a></li>
+				<li><a href="#"><img src="img/icons/footer/02.svg" alt="social"></a></li>
+				<li><a href="#"><img src="img/icons/footer/03.svg" alt="social"></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-bottom__bottom-center">© «FAVORIT» Ижевск 2023 г.</div>
+</footer>
+
+</div>
+	<script src="js/swiper-bundle.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
